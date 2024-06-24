@@ -20,6 +20,8 @@
         "vite": "^5.0"
     },
     "dependencies": {
-        "@heroicons/react": "^2.1.4"
+        "@heroicons/react": "^2.1.4",
+        "flowbite": "^2.3.0",
+        "preline": "^2.3.0"
     }
 }
