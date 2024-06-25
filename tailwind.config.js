@@ -10,7 +10,6 @@ export default {
         './resources/js/**/*.jsx',
         'node_modules/preline/dist/*.js',
         "./node_modules/flowbite/**/*.js",
-        "./node_modules/@relume_io/relume-ui/dist/**/*.{js,ts,jsx,tsx}"
     ],
 
     theme: {
@@ -28,10 +27,6 @@ export default {
             },
         },
     },
-
-    presets: [
-        require("@relume_io/relume-tailwind"),
-    ],
 
     plugins: [
         forms,
