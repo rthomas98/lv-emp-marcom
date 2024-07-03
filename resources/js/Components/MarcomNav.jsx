@@ -304,13 +304,12 @@ export default function MarcomNav({active = false, className = '', children}) {
                                         </div>
                                     ))}
                                 </div>
-                                <div className="bg-gray-50 px-8 py-6">
+                                <div className="bg-em-purple px-8 py-6">
                                     <div className="flex items-center gap-x-3">
-                                        <h3 className="text-sm font-semibold leading-6 text-gray-900">Enterprise</h3>
-                                        <p className="rounded-full bg-indigo-600/10 px-2.5 py-1.5 text-xs font-semibold text-indigo-600">New</p>
+                                        <h3 className="text-sm font-semibold leading-6 text-white">Our Services</h3>
                                     </div>
-                                    <p className="mt-2 text-sm leading-6 text-gray-600">
-                                        Empower your entire team with even more advanced tools.
+                                    <p className="mt-2 text-sm leading-6 text-white">
+                                        Explore our range of expert services, including custom software development, DevOps, IT consulting, and more. Empuls3 delivers tailored solutions to meet your business needs.
                                     </p>
                                 </div>
                             </div>

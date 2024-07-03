@@ -177,7 +177,7 @@ export default function MarcomFooter() {
                                     {navigation.services.map((item) => (
                                         <li key={item.name}>
                                             <a href={item.href}
-                                               className="text-sm leading-6 text-white hover:text-gray-900">
+                                               className="text-sm leading-6 text-white hover:text-em-pink">
                                                 {item.name}
                                             </a>
                                         </li>

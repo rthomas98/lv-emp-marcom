@@ -2,68 +2,95 @@ import MarcomLayout from '@/Layouts/MarcomLayout';
 import {Head} from "@inertiajs/react";
 import {
     ChatBubbleOvalLeftEllipsisIcon,
-    CloudArrowUpIcon, HeartIcon,
-    LockClosedIcon,
+    HeartIcon, LifebuoyIcon,
     PencilSquareIcon,
-    ServerIcon,
     TrashIcon
 } from '@heroicons/react/20/solid'
 import ClientLogos from "@/Components/ClientLogos.jsx";
+import {
+    BeakerIcon,
+    HandThumbUpIcon,
+    PaintBrushIcon,
+    PuzzlePieceIcon,
+    UserIcon,
+    UsersIcon, WrenchScrewdriverIcon
+} from "@heroicons/react/24/outline";
 
 
 const features = [
     {
-        name: 'Push to deploy.',
+        name: 'Innovative Solutions',
         description:
-            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-        icon: CloudArrowUpIcon,
+            'We leverage the latest technologies to create solutions that drive innovation and efficiency.',
+        icon: PuzzlePieceIcon,
     },
     {
-        name: 'SSL certificates.',
-        description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
-        icon: LockClosedIcon,
+        name: 'Client-Centric Approach',
+        description: 'We place our clients at the heart of everything we do, ensuring that their needs are met with precision and care.',
+        icon: HandThumbUpIcon,
     },
     {
-        name: 'Database backups.',
-        description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-        icon: ServerIcon,
+        name: 'Expert Team',
+        description: 'Our team of experts brings a wealth of experience and knowledge to every project, ensuring the highest standards of quality and performance.',
+        icon: UsersIcon,
     },
 ]
 
 const people = [
     {
-        name: 'Leslie Alexander',
+        name: 'Robert Thomas',
         role: 'Co-Founder / CEO',
         imageUrl:
             'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-        location: 'Toronto, Canada',
+        location: 'Dallas, Texas',
+    },
+    {
+        name: 'Cole Bush',
+        role: 'Co-Founder / CTO',
+        imageUrl:
+            'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+        location: 'Dallas, Texas',
+    },
+    {
+        name: 'Adrian Hebert-Thomas Esq.',
+        role: 'Legal/Project Manager',
+        imageUrl:
+            'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+        location: 'Dallas, Texas',
+    },
+    {
+        name: 'Denise Gray',
+        role: 'Sales and Marketing Manager',
+        imageUrl:
+            'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+        location: 'Dallas, Texas',
     },
 ]
 
 const solutionscta = [
     {
-        name: 'Spam report',
+        name: 'Consultation & Analysis',
         description:
-            'Autem reprehenderit aut debitis ut. Officiis harum omnis placeat blanditiis delectus sint vel et voluptatum. Labore asperiores non corporis molestiae.',
-        icon: TrashIcon,
+            'We start by understanding your business goals and challenges, conducting a thorough analysis to develop a tailored solution that meets your specific needs.',
+        icon: UserIcon,
     },
     {
-        name: 'Compose in markdown',
+        name: 'Design & Prototyping',
         description:
-            'Illum et aut inventore. Ut et dignissimos quasi. Omnis saepe dolorum. Hic autem fugiat. Voluptatem officiis necessitatibus est.',
-        icon: PencilSquareIcon,
+            'Our team creates detailed designs and prototypes, allowing you to visualize the solution and provide feedback before development begins.',
+        icon: PaintBrushIcon,
     },
     {
-        name: 'Email commenting',
+        name: 'Development & Testing',
         description:
-            'Commodi quam quo. In quasi mollitia optio voluptate et est reiciendis. Ut et sunt id officiis vitae perspiciatis. Et accusantium sapiente.',
-        icon: ChatBubbleOvalLeftEllipsisIcon,
+            'Using industry best practices, we develop robust solutions and conduct rigorous testing to ensure they meet the highest standards of quality and performance.',
+        icon: BeakerIcon,
     },
     {
-        name: 'Customer connections',
+        name: 'Deployment & Support',
         description:
-            'Deserunt corrupti praesentium quo vel cupiditate est occaecati ad. Aperiam libero modi similique iure praesentium facilis quo cumque quibusdam.',
-        icon: HeartIcon,
+            'We seamlessly deploy your solution and provide ongoing support to ensure its continued success and optimization, adapting to any new challenges that arise.',
+        icon: WrenchScrewdriverIcon,
     },
 ]
 
@@ -85,31 +112,59 @@ export default function About() {
         <MarcomLayout>
             <Head title="About Us"/>
 
-            <div className="relative overflow-hidden">
+            <div className="relative isolate overflow-hidden">
+                <svg
+                    className="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+                    aria-hidden="true"
+                >
+                    <defs>
+                        <pattern
+                            id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527"
+                            width={200}
+                            height={200}
+                            x="50%"
+                            y={-1}
+                            patternUnits="userSpaceOnUse"
+                        >
+                            <path d="M100 200V.5M.5 .5H200" fill="none"/>
+                        </pattern>
+                    </defs>
+                    <svg x="50%" y={-1} className="overflow-visible fill-gray-50">
+                        <path
+                            d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
+                            strokeWidth={0}
+                        />
+                    </svg>
+                    <rect width="100%" height="100%" strokeWidth={0} fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)"/>
+                </svg>
                 <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10">
-                    <div className="max-w-2xl text-center mx-auto">
-                        <h1 className="block text-3xl font-bold text-gray-800 sm:text-4xl md:text-5xl dark:text-white">Designed
-                            for you to get more <span className="text-blue-600">simple</span></h1>
-                        <p className="mt-3 text-lg text-gray-800 dark:text-neutral-400">Build your business here. Take
-                            it anywhere.</p>
+                    <div className="max-w-3xl text-center mx-auto">
+                        <h1
+                            className="col-start-1 row-start-1 h-7 text-base font-semibold leading-7 text-em-pink"
+                            aria-hidden="true">About Empuls3
+                        </h1>
+                        <div
+                            className="mt-4 max-w-[36rem] text-4xl font-extrabold tracking-tight text-slate-900 sm:text-7xl xl:max-w-[43.5rem]">
+                            Our Partner in Innovation and Success
+                        </div>
+                        <p className="mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">At Empuls3, we are
+                            dedicated to
+                            transforming businesses with innovative technology solutions. Our team of experts combines
+                            technical excellence with a client-focused approach to deliver customized solutions that
+                            drive success. Learn more about our mission, values, and the people who make it all
+                            possible.</p>
                     </div>
 
-                    <div className="mt-10 relative max-w-5xl mx-auto">
-                        <div
-                            className="w-full object-cover h-96 sm:h-[480px] bg-[url('https://images.unsplash.com/photo-1606868306217-dbf5046868d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1981&q=80')] bg-no-repeat bg-center bg-cover rounded-xl"></div>
-
+                    <div className="mt-10 relative max-w-5xl mx-auto text-center">
+                        <img
+                            src="/images/about-hero-main.png"
+                            alt="Product screenshot"
+                            className="rounded-xl w-full mx-auto shadow-xl ring-1 ring-gray-400/10"
+                            width={2432}
+                            height={1442}
+                        />
                         <div className="absolute inset-0 size-full">
-                            <div className="flex flex-col justify-center items-center size-full">
-                                <a className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-full border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800"
-                                   href="#">
-                                    <svg className="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
-                                         height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                         strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                        <polygon points="5 3 19 12 5 21 5 3"/>
-                                    </svg>
-                                    Play the overview
-                                </a>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -120,19 +175,23 @@ export default function About() {
                         className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
                         <div className="lg:pr-8 lg:pt-4">
                             <div className="lg:max-w-lg">
-                                <h2 className="text-base font-semibold leading-7 text-indigo-600">Deploy faster</h2>
-                                <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">A better
-                                    workflow</p>
+                                <h2
+                                    className="col-start-1 row-start-1 h-7 text-base font-semibold leading-7 text-em-pink mb-4"
+                                    aria-hidden="true">Innovating for a Better Future
+                                </h2>
+                                <div className="mb-4 text-4xl font-extrabold tracking-tight text-slate-900">
+                                    Our Commitment to Excellence
+                                </div>
                                 <p className="mt-6 text-lg leading-8 text-gray-600">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
-                                    perferendis suscipit eaque,
-                                    iste dolor cupiditate blanditiis ratione.
+                                    At Empuls3, we believe in the power of technology to transform businesses. Our dedicated team works tirelessly to deliver solutions that not only meet but exceed client expectations. We are committed to innovation, quality, and client satisfaction.
                                 </p>
+
+
                                 <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
                                     {features.map((feature) => (
                                         <div key={feature.name} className="relative pl-9">
                                             <dt className="inline font-semibold text-gray-900">
-                                                <feature.icon className="absolute left-1 top-1 h-5 w-5 text-indigo-600"
+                                                <feature.icon className="absolute left-1 top-1 h-5 w-5 text-em-pink"
                                                               aria-hidden="true"/>
                                                 {feature.name}
                                             </dt>
@@ -144,7 +203,7 @@ export default function About() {
                             </div>
                         </div>
                         <img
-                            src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
+                            src="/images/about-hero-img-3.png"
                             alt="Product screenshot"
                             className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
                             width={2432}
@@ -153,14 +212,54 @@ export default function About() {
                     </div>
                 </div>
             </div>
-            <div className="bg-gray-900 py-24 sm:py-32">
+            <div className="relative isolate overflow-hidden bg-em-purple py-24 sm:py-32">
+                <div
+                    className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+                    aria-hidden="true"
+                >
+                    <div
+                        className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+                        style={{
+                            clipPath:
+                                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+                        }}
+                    />
+                </div>
+                <svg
+                    className="absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+                    aria-hidden="true"
+                >
+                    <defs>
+                        <pattern
+                            id="983e3e4c-de6d-4c3f-8d64-b9761d1534cc"
+                            width={200}
+                            height={200}
+                            x="50%"
+                            y={-1}
+                            patternUnits="userSpaceOnUse"
+                        >
+                            <path d="M.5 200V.5H200" fill="none"/>
+                        </pattern>
+                    </defs>
+                    <svg x="50%" y={-1} className="overflow-visible fill-gray-800/20">
+                        <path
+                            d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z"
+                            strokeWidth={0}
+                        />
+                    </svg>
+                    <rect width="100%" height="100%" strokeWidth={0} fill="url(#983e3e4c-de6d-4c3f-8d64-b9761d1534cc)"/>
+                </svg>
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto max-w-2xl lg:mx-0">
-                        <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Our team</h2>
-                        <p className="mt-6 text-lg leading-8 text-gray-300">
-                            We’re a dynamic group of individuals who are passionate about what we do and dedicated to
-                            delivering the
-                            best results for our clients.
+                        <div
+                            className="col-start-1 row-start-1 h-7 text-base font-semibold leading-7 text-em-yellow mb-4"
+                            aria-hidden="true">Meet the Experts
+                        </div>
+                        <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-white">
+                            Our Dedicated Team
+                        </h2>
+                        <p className="mt-6 text-lg leading-8 text-white">
+                            At Empuls3, our success is driven by a team of talented and passionate professionals. Each member brings unique expertise and a commitment to excellence, working collaboratively to deliver innovative solutions that help our clients thrive. Get to know the people behind our success.
                         </p>
                     </div>
                     <ul
@@ -173,22 +272,42 @@ export default function About() {
                                      alt=""/>
                                 <h3 className="mt-6 text-lg font-semibold leading-8 tracking-tight text-white">{person.name}</h3>
                                 <p className="text-base leading-7 text-gray-300">{person.role}</p>
-                                <p className="text-sm leading-6 text-gray-500">{person.location}</p>
+                                <p className="text-sm leading-6 text-em-yellow">{person.location}</p>
                             </li>
                         ))}
                     </ul>
                 </div>
             </div>
-            <div className="bg-white py-24 sm:py-32">
+            <div className="relative isolate overflow-hidden bg-white py-24 sm:py-32">
+                <svg
+                    className="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+                    aria-hidden="true"
+                >
+                    <defs>
+                        <pattern
+                            id="0787a7c5-978c-4f66-83c7-11c213f99cb7"
+                            width={200}
+                            height={200}
+                            x="50%"
+                            y={-1}
+                            patternUnits="userSpaceOnUse"
+                        >
+                            <path d="M.5 200V.5H200" fill="none"/>
+                        </pattern>
+                    </defs>
+                    <rect width="100%" height="100%" strokeWidth={0} fill="url(#0787a7c5-978c-4f66-83c7-11c213f99cb7)"/>
+                </svg>
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto max-w-xl text-center">
-                        <h2 className="text-lg font-semibold leading-8 tracking-tight text-indigo-600">Testimonials</h2>
-                        <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                            We have worked with thousands of amazing people
-                        </p>
+                        <h2
+                            className="col-start-1 row-start-1 h-7 text-base font-semibold leading-7 text-em-pink mb-4"
+                            aria-hidden="true">Driving Success with Custom Technologies
+                        </h2>
+                        <p className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">About
+                            Empuls3</p>
                     </div>
                     <div className="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
-                        <div className="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-3">
+                    <div className="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-3">
                             {testimonials.map((testimonial) => (
                                 <div key={testimonial.author.handle} className="pt-8 sm:inline-block sm:w-full sm:px-4">
                                     <figure className="rounded-2xl bg-gray-50 p-8 text-sm leading-6">
@@ -211,19 +330,34 @@ export default function About() {
                     </div>
                 </div>
             </div>
-            <div className="bg-white py-24 sm:py-32">
+
+            <div className="relative isolate bg-white py-24 sm:py-32">
+                <div
+                    className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+                    aria-hidden="true"
+                >
+                    <div
+                        className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+                        style={{
+                            clipPath:
+                                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+                        }}
+                    />
+                </div>
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div
                         className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+
                         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                            Stay on top of customer support
+                            <span className="col-start-1 row-start-1 mb-4 h-7 text-base font-semibold leading-7 text-em-purple mb-4">How We Deliver Excellence</span><br/>
+                            Our Proven Process
                         </h2>
                         <dl className="col-span-2 grid grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2">
-                            {features.map((solutionscta) => (
+                            {solutionscta.map((solutionscta) => (
                                 <div key={solutionscta.name}>
                                     <dt className="text-base font-semibold leading-7 text-gray-900">
                                         <div
-                                            className="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                                            className="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-em-pink">
                                             <solutionscta.icon className="h-6 w-6 text-white" aria-hidden="true"/>
                                         </div>
                                         {solutionscta.name}
