@@ -11,24 +11,21 @@ import { UserPlusIcon, AdjustmentsHorizontalIcon } from "@heroicons/react/24/out
 
 const features = [
     {
-        name: 'Push to deploy',
+        name: 'Streamlined Launch Processes',
         description:
-            'Commodo nec sagittis tortor mauris sed. Turpis tortor quis scelerisque diam id accumsan nullam tempus. Pulvinar etiam lacus volutpat eu. Phasellus praesent ligula sit faucibus.',
-        href: '#',
+            'Our rapid deployment methodologies ensure your applications are launched efficiently and effectively. We handle every detail to expedite your app’s go-live date.',
         icon: CloudArrowUpIcon,
     },
     {
-        name: 'SSL certificates',
+        name: 'Comprehensive Security Measures',
         description:
-            'Pellentesque enim a commodo malesuada turpis eleifend risus. Facilisis donec placerat sapien consequat tempor fermentum nibh.',
-        href: '#',
+            'We implement comprehensive security protocols, including robust SSL certificates, to safeguard your applications. Protecting your data and ensuring user trust is our priority.',
         icon: LockClosedIcon,
     },
     {
-        name: 'Simple queues',
+        name: 'Advanced Queue Management',
         description:
-            'Pellentesque sit elit congue ante nec amet. Dolor aenean curabitur viverra suspendisse iaculis eget. Nec mollis placerat ultricies euismod ut condimentum.',
-        href: '#',
+            'Our advanced queue management solutions optimize your application\'s performance, ensuring seamless operation and minimizing latency under various conditions.',
         icon: ArrowPathIcon,
     },
 ]
@@ -112,7 +109,9 @@ export default function Approach() {
                             Our Approach to Success
                         </h1>
                         <p className="mt-6 text-lg leading-8 text-white sm:max-w-md lg:max-w-none">
-                            At Empuls3, we combine innovation with strategy to deliver technology solutions that drive business success. Our proven methodologies ensure that every project is executed with precision and excellence. Learn how our approach can transform your business.
+                            At Empuls3, we combine innovation with strategy to deliver technology solutions that drive
+                            business success. Our proven methodologies ensure that every project is executed with
+                            precision and excellence. Learn how our approach can transform your business.
                         </p>
                         <div className="mt-10 flex items-center gap-x-6">
                             <Link href="/company/about"
@@ -235,9 +234,12 @@ export default function Approach() {
                                     className="col-start-1 row-start-1 mb-4 h-7 text-base font-semibold leading-7 text-em-pink"
                                     aria-hidden="true">Strategic Insight and Planning
                                 </div>
-                                <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">Research-Driven Approach for Project Success</h2>
+                                <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">Research-Driven
+                                    Approach for Project Success</h2>
                                 <p className="mb-4">
-                                    Our research-driven approach guides our strategic planning, ensuring project success. By leveraging thorough research and analysis, we create data-informed strategies tailored to your business needs.
+                                    Our research-driven approach guides our strategic planning, ensuring project
+                                    success. By leveraging thorough research and analysis, we create data-informed
+                                    strategies tailored to your business needs.
                                 </p>
                             </div>
                         </div>
@@ -279,13 +281,19 @@ export default function Approach() {
                                     </li>
                                 </ul>
                                 <p className="mt-8">
-                                    We are committed to providing continuous support and optimization, ensuring that your solutions remain effective and up-to-date. Our research-driven approach is designed to adapt to your evolving needs, delivering long-term success.
+                                    We are committed to providing continuous support and optimization, ensuring that
+                                    your solutions remain effective and up-to-date. Our research-driven approach is
+                                    designed to adapt to your evolving needs, delivering long-term success.
 
 
                                 </p>
-                                <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">Need Help with Your Project?</h2>
+                                <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">Need Help with
+                                    Your Project?</h2>
                                 <p className="mt-6">
-                                    Whether you have a server or not, our solutions are designed to fit your infrastructure needs seamlessly. Our cloud-based options ensure scalability and reliability. Connect with us today to get started on your project and experience the Empuls3 advantage.
+                                    Whether you have a server or not, our solutions are designed to fit your
+                                    infrastructure needs seamlessly. Our cloud-based options ensure scalability and
+                                    reliability. Connect with us today to get started on your project and experience the
+                                    Empuls3 advantage.
                                 </p>
                             </div>
                         </div>
@@ -312,50 +320,96 @@ export default function Approach() {
                         className="mx-auto mt-16 flex max-w-2xl flex-col gap-8 lg:mx-0 lg:mt-20 lg:max-w-none lg:flex-row lg:items-end">
                         <div
                             className="flex flex-col-reverse justify-between gap-x-16 gap-y-8 rounded-2xl bg-em-yellow p-8 sm:w-3/4 sm:max-w-md sm:flex-row-reverse sm:items-end lg:w-72 lg:max-w-none lg:flex-none lg:flex-col lg:items-start">
-                            <p className="flex-none text-3xl font-bold tracking-tight text-gray-900">250k</p>
+                            <p className="flex-none text-3xl font-bold tracking-tight text-gray-900">Step 1</p>
                             <div className="sm:w-80 sm:shrink lg:w-auto lg:flex-none">
-                                <p className="text-lg font-semibold tracking-tight text-gray-900">Empowering Businesses</p>
+                                <p className="text-lg font-semibold tracking-tight text-gray-900">Empowering
+                                    Businesses</p>
                                 <p className="mt-2 text-base leading-7 text-gray-600">
-                                    We empower businesses with customized technology solutions that drive innovation and growth, making a real difference in their operations.
+                                    We empower businesses with customized technology solutions that drive innovation and
+                                    growth, making a real difference in their operations.
                                 </p>
                             </div>
                         </div>
                         <div
                             className="flex flex-col-reverse justify-between gap-x-16 gap-y-8 rounded-2xl bg-em-purple p-8 sm:flex-row-reverse sm:items-end lg:w-full lg:max-w-sm lg:flex-auto lg:flex-col lg:items-start lg:gap-y-44">
-                            <p className="flex-none text-3xl font-bold tracking-tight text-white">$8.9 billion</p>
+                            <p className="flex-none text-3xl font-bold tracking-tight text-white">Step 2</p>
                             <div className="sm:w-80 sm:shrink lg:w-auto lg:flex-none">
                                 <p className="text-lg font-semibold tracking-tight text-white">
                                     Driving Innovation
                                 </p>
                                 <p className="mt-2 text-base leading-7 text-gray-400">
-                                    Our commitment to driving innovation has resulted in cutting-edge solutions that meet the evolving needs of our clients.
+                                    Our commitment to driving innovation has resulted in cutting-edge solutions that
+                                    meet the evolving needs of our clients.
                                 </p>
                             </div>
                         </div>
                         <div
                             className="flex flex-col-reverse justify-between gap-x-16 gap-y-8 rounded-2xl bg-em-pink p-8 sm:w-11/12 sm:max-w-xl sm:flex-row-reverse sm:items-end lg:w-full lg:max-w-none lg:flex-auto lg:flex-col lg:items-start lg:gap-y-28">
-                            <p className="flex-none text-3xl font-bold tracking-tight text-white">401,093</p>
+                            <p className="flex-none text-3xl font-bold tracking-tight text-white">Step 3</p>
                             <div className="sm:w-80 sm:shrink lg:w-auto lg:flex-none">
                                 <p className="text-lg font-semibold tracking-tight text-white">Enhancing Efficiency</p>
                                 <p className="mt-2 text-base leading-7 text-indigo-200">
-                                    We focus on enhancing efficiency and productivity, enabling businesses to achieve their goals more effectively.
+                                    We focus on enhancing efficiency and productivity, enabling businesses to achieve
+                                    their goals more effectively.
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="bg-gray-900 py-24 sm:py-32">
+
+            <div className="relative isolate overflow-hidden bg-em-purple py-24 sm:py-32">
+                <svg
+                    className="absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_left,white,transparent)]"
+                    aria-hidden="true"
+                >
+                    <defs>
+                        <pattern
+                            id="983e3e4c-de6d-4c3f-8d64-b9761d1534cc"
+                            width={200}
+                            height={200}
+                            x="50%"
+                            y={-1}
+                            patternUnits="userSpaceOnUse"
+                        >
+                            <path d="M.5 200V.5H200" fill="none"/>
+                        </pattern>
+                    </defs>
+                    <svg x="50%" y={-1} className="overflow-visible fill-gray-800/20">
+                        <path
+                            d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z"
+                            strokeWidth={0}
+                        />
+                    </svg>
+                    <rect width="100%" height="100%" strokeWidth={0} fill="url(#983e3e4c-de6d-4c3f-8d64-b9761d1534cc)"/>
+                </svg>
+                <div
+                    className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+                    aria-hidden="true"
+                >
+                    <div
+                        className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+                        style={{
+                            clipPath:
+                                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+                        }}
+                    />
+                </div>
+
+
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto max-w-2xl lg:text-center">
-                        <h2 className="text-base font-semibold leading-7 text-indigo-400">Deploy faster</h2>
-                        <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                            Everything you need to deploy your app
-                        </p>
-                        <p className="mt-6 text-lg leading-8 text-gray-300">
-                            Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a
-                            elementum
-                            pulvinar et feugiat blandit at. In mi viverra elit nunc.
+                        <div
+                            className="col-start-1 row-start-1 h-7 text-base font-semibold leading-7 text-em-yellow mb-4"
+                            aria-hidden="true">Precision and Excellence
+                        </div>
+                        <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-white">
+                            Ensuring Quality and Fine-Tuning: The Crucial Testing Phase
+                        </h2>
+                        <p className="mt-6 text-lg leading-8 text-white">
+                            At Empuls3, we understand that thorough testing is essential to delivering high-quality
+                            solutions. Our rigorous testing phase ensures that every product we develop meets the
+                            highest standards of performance, security, and reliability.
                         </p>
                     </div>
                     <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
@@ -363,17 +417,12 @@ export default function Approach() {
                             {features.map((feature) => (
                                 <div key={feature.name} className="flex flex-col">
                                     <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-white">
-                                        <feature.icon className="h-5 w-5 flex-none text-indigo-400" aria-hidden="true"/>
+                                        <feature.icon className="h-5 w-5 flex-none text-em-pink" aria-hidden="true"/>
                                         {feature.name}
                                     </dt>
                                     <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-300">
                                         <p className="flex-auto">{feature.description}</p>
-                                        <p className="mt-6">
-                                            <a href={feature.href}
-                                               className="text-sm font-semibold leading-6 text-indigo-400">
-                                                Learn more <span aria-hidden="true">→</span>
-                                            </a>
-                                        </p>
+
                                     </dd>
                                 </div>
                             ))}
@@ -381,29 +430,172 @@ export default function Approach() {
                     </div>
                 </div>
             </div>
+
+
+            <div className="relative isolate overflow-hidden py-10 bg-white sm:py-16 lg:py-24">
+                <div className="absolute inset-0 -z-10 overflow-hidden">
+                    <svg
+                        className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
+                        aria-hidden="true"
+                    >
+                        <defs>
+                            <pattern
+                                id="e813992c-7d03-4cc4-a2bd-151760b470a0"
+                                width={200}
+                                height={200}
+                                x="50%"
+                                y={-1}
+                                patternUnits="userSpaceOnUse"
+                            >
+                                <path d="M100 200V.5M.5 .5H200" fill="none"/>
+                            </pattern>
+                        </defs>
+                        <svg x="50%" y={-1} className="overflow-visible fill-gray-50">
+                            <path
+                                d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
+                                strokeWidth={0}
+                            />
+                        </svg>
+                        <rect width="100%" height="100%" strokeWidth={0}
+                              fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)"/>
+                    </svg>
+                </div>
+                <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                    <div className="grid items-center grid-cols-1 lg:grid-cols-2 gap-x-12 xl:gap-x-24 gap-y-12">
+                        <div className="relative lg:mb-12">
+                            <img className="absolute -right-0 -bottom-8 xl:-bottom-12 xl:-right-4"
+                                 src="https://cdn.rareblocks.xyz/collection/celebration/images/content/3/dots-pattern.svg"
+                                 alt=""/>
+                            <div className="pl-12 pr-6">
+                                <img className="relative w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                                     src="/images/appoach-img-6.png"
+                                     alt=""/>
+                            </div>
+                            <div className="absolute left-0 pr-12 bottom-8 xl:bottom-20">
+                                <div className="max-w-xs bg-em-pink rounded-lg sm:max-w-md xl:max-w-md">
+                                    <div className="px-3 py-4 sm:px-5 sm:py-8">
+                                        <div className="flex items-start">
+                                            <blockquote className="ml-5">
+                                                <p className="text-sm font-medium text-white sm:text-lg">Our focus on
+                                                    measurable success ensures that your project achieves its
+                                                    objectives, delivering tangible results and driving business
+                                                    growth.</p>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="2xl:pl-16">
+                            <div
+                                className="col-start-1 row-start-1 h-7 text-base font-semibold leading-7 text-em-pink mb-4"
+                                aria-hidden="true">Seamless Execution
+                            </div>
+                            <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-gray-900">
+                                Efficient and Successful Project Launch and Implementation
+                            </h2>
+                            <p className="mt-6 text-lg leading-8 text-slate-600">
+                                At Empuls3, we ensure that every project launch and implementation is carried out with
+                                precision and excellence. Our team’s expertise and meticulous planning guarantee a
+                                smooth transition from development to deployment, ensuring your project's success.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="relative isolate overflow-hidden py-12 bg-white sm:py-16 lg:py-20 xl:py-24">
+                <div
+                    className="absolute -top-80 left-[max(6rem,33%)] -z-10 transform-gpu blur-3xl sm:left-1/2 md:top-20 lg:ml-20 xl:top-3 xl:ml-56"
+                    aria-hidden="true"
+                >
+                    <div
+                        className="aspect-[801/1036] w-[50.0625rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
+                        style={{
+                            clipPath:
+                                'polygon(63.1% 29.6%, 100% 17.2%, 76.7% 3.1%, 48.4% 0.1%, 44.6% 4.8%, 54.5% 25.4%, 59.8% 49.1%, 55.3% 57.9%, 44.5% 57.3%, 27.8% 48%, 35.1% 81.6%, 0% 97.8%, 39.3% 100%, 35.3% 81.5%, 97.2% 52.8%, 63.1% 29.6%)',
+                        }}
+                    />
+                </div>
+                <svg
+                    className="absolute -top-[40rem] left-1 -z-10 h-[64rem] w-[175.5rem] -translate-x-1/2 stroke-gray-900/10 [mask-image:radial-gradient(64rem_64rem_at_111.5rem_0%,white,transparent)]"
+                    aria-hidden="true"
+                >
+                    <defs>
+                        <pattern
+                            id="e87443c8-56e4-4c20-9111-55b82fa704e3"
+                            width={200}
+                            height={200}
+                            patternUnits="userSpaceOnUse"
+                        >
+                            <path d="M0.5 0V200M200 0.5L0 0.499983"/>
+                        </pattern>
+                    </defs>
+                    <rect width="100%" height="100%" strokeWidth={0} fill="url(#e87443c8-56e4-4c20-9111-55b82fa704e3)"/>
+                </svg>
+                <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+                    <div className="grid grid-cols-1 lg:grid-cols-8 lg:gap-x-16 xl:gap-x-24 gap-y-12">
+                        <div className="lg:col-span-5 xl:pr-24">
+                            <div className="max-w-lg lg:max-w-none">
+                                <h2
+                                    className="col-start-1 row-start-1 h-7 text-base font-semibold leading-7 text-em-pink mb-4"
+                                    aria-hidden="true">Continuous Improvement and Reliability
+                                </h2>
+                                <div className="mb-4 text-4xl font-extrabold tracking-tight text-slate-900">
+                                    Efficient and Results-Driven Maintenance and Support Phase
+                                </div>
+                                <p className="mt-6 text-lg leading-8 text-gray-600">
+                                    At Empuls3, we understand the importance of ongoing maintenance and support to ensure the long-term success of your solutions. Our proactive approach and dedicated support team ensure your systems remain efficient, secure, and up-to-date.
+                                </p>
+                            </div>
+
+                            <div
+                                className="grid grid-cols-1 pt-3 mt-8 border-t border-gray-200 sm:grid-cols-2 md:mt-16 xl:mt-24 gap-x-16 gap-y-8">
+
+                                <p>
+                                    Our team of experts provides dedicated assistance, promptly addressing any issues that arise and ensuring your systems run smoothly and efficiently.
+                                </p>
+
+                                <p>
+                                    We perform regular updates to keep your systems current with the latest features and security patches, ensuring optimal performance and protection.
+                                </p>
+                            </div>
+
+                            <div className="mt-12">
+
+                            </div>
+                        </div>
+
+                        <div className="lg:col-span-3">
+                            <img className="w-full xl:h-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                                 src="/images/appoach-img-7.png"
+                                 alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
             <div className="bg-white">
                 <div className="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
                     <div className="mx-auto max-w-2xl text-center">
-                        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                            Boost your productivity.
-                            <br/>
-                            Start using our app today.
+
+                        <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-slate-900">
+                            Ready to Enhance Your Project?
                         </h2>
-                        <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-600">
-                            Incididunt sint fugiat pariatur cupidatat consectetur sit cillum anim id veniam aliqua
-                            proident excepteur
-                            commodo do ea.
+                        <p className="mt-6 text-lg leading-8 text-gray-600">
+                            Partner with Empuls3 to ensure your project’s success from start to finish. Our comprehensive approach, from strategic planning to ongoing maintenance, guarantees innovative solutions tailored to your needs. Let's turn your ideas into reality.
                         </p>
                         <div className="mt-10 flex items-center justify-center gap-x-6">
-                            <a
-                                href="#"
-                                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                            >
-                                Get started
-                            </a>
-                            <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-                                Learn more <span aria-hidden="true">→</span>
-                            </a>
+                            <Link href="/contact"
+                                  className="relative h-12 overflow-hidden rounded bg-em-pink px-5 py-2.5 font-semibold text-white transition-all duration-300 hover:bg-em-purple hover:ring-2 hover:ring-em-pink hover:ring-offset-2">
+                                <span className="relative">Start Your Project</span>
+                            </Link>
+                            <Link href="/frequently-asked-questions"
+                                  className="font-semibold leading-6 text-em-purple hover:text-em-pink">
+                                Have More Questions? <span aria-hidden="true">→</span>
+                            </Link>
                         </div>
                     </div>
                 </div>
