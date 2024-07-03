@@ -97,9 +97,15 @@ export default function Testimonials() {
             </div>
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-xl text-center">
-                    <h2 className="text-lg font-semibold leading-8 tracking-tight text-indigo-600">Testimonials</h2>
-                    <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                        We have worked with thousands of amazing people
+                    <div
+                        className="col-start-1 row-start-1 h-7 mb-4 text-base font-semibold leading-7 text-em-pink"
+                        aria-hidden="true">Testimonials
+                    </div>
+                    <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-slate-900">
+                        Partner Success Stories
+                    </h2>
+                    <p className="mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
+                        Read about some of our successful partnerships and the value we've created together.
                     </p>
                 </div>
                 <div
@@ -118,7 +124,7 @@ export default function Testimonials() {
                                 alt=""
                             />
                             <div className="flex-auto">
-                                <div className="font-semibold">{featuredTestimonial.author.name}</div>
+                            <div className="font-semibold">{featuredTestimonial.author.name}</div>
                                 <div className="text-gray-600">{`@${featuredTestimonial.author.handle}`}</div>
                             </div>
                             <img className="h-10 w-auto flex-none" src={featuredTestimonial.author.logoUrl} alt=""/>
