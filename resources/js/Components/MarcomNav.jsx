@@ -40,67 +40,67 @@ import {ClipboardDocumentCheckIcon} from "@heroicons/react/24/outline/index.js";
 
 const solutions = [
     { name: 'Solutions Overview',
-        description: 'Get a better understanding of your traffic',
+        description: 'Comprehensive Tech Solutions',
         href: '/solutions/solutions-overview/',
         icon: ChartPieIcon
     },
     {
         name: 'Back-End Development',
-        description: 'Connect with third-party tools and find out expectations',
+        description: 'Robust Server-Side Solutions',
         href: '/solutions/back-end-development/',
         icon: SquaresPlusIcon,
     },
     {
         name: 'Custom Software Development',
-        description: 'Speak directly to your customers with our engagement tool',
+        description: 'Tailored Software Solutions',
         href: '/solutions/custom-software-development/',
         icon: CursorArrowRaysIcon,
     },
     {
         name: 'Custom WordPress Development',
-        description: 'Build strategic funnels that will convert',
+        description: 'Unique WordPress Customizations',
         href: '/solutions/custom-wordpress-development',
         icon: ArrowPathIcon
     },
     {
         name: 'E-Commerce Development',
-        description: "Your customers' data will be safe and secure",
+        description: "Online Store Development",
         href: '/solutions/ecommerce-development/',
         icon: FingerPrintIcon
     },
     {
         name: 'Front-End Development',
-        description: 'Edit, manage and create newly informed decisions',
+        description: 'Engaging User Interfaces',
         href: '/solutions/front-end-development/',
         icon: DocumentChartBarIcon,
     },
     {
         name: 'HubSpot Development',
-        description: 'Edit, manage and create newly informed decisions',
+        description: 'HubSpot CRM Integrations',
         href: '/solutions/hubspot-development/',
         icon: DocumentChartBarIcon,
     },
     {
         name: 'MVP Development',
-        description: 'Edit, manage and create newly informed decisions',
+        description: 'Launch Startups Efficiently',
         href: '/solutions/mvp-development/',
         icon: DocumentChartBarIcon,
     },
     {
         name: 'Progressive Web Development',
-        description: 'Edit, manage and create newly informed decisions',
+        description: 'Cutting-Edge Web Apps',
         href: '/solutions/progressive-web-development/',
         icon: DocumentChartBarIcon,
     },
     {
         name: 'React Native Development',
-        description: 'Edit, manage and create newly informed decisions',
+        description: 'Cross-Platform Mobile Apps',
         href: '/solutions/react-native-development/',
         icon: DocumentChartBarIcon,
     },
     {
         name: 'Software Development and Design',
-        description: 'Edit, manage and create newly informed decisions',
+        description: 'Elegant & Functional Software',
         href: '/solutions/software-development-and-design/',
         icon: DocumentChartBarIcon,
     },
@@ -108,52 +108,52 @@ const solutions = [
 const services = [
     {
         name: 'Services Overview',
-        description: 'Get a better understanding of your traffic',
+        description: 'All Our Services',
         href: '/services/services-overview',
         icon: BellIcon
     },
     {
         name: 'Application Services',
-        description: 'Connect with third-party tools and find out expectations',
+        description: 'Comprehensive App Solutions',
         href: '/services/application-services/',
         icon: ChartBarIcon,
     },
     {
         name: 'DevOps Services',
-        description: 'Speak directly to your customers with our engagement tool',
+        description: 'Integrated DevOps Services',
         href: '/services/devops/',
         icon: CogIcon,
     },
     {
         name: 'IT Consulting Services',
-        description: 'Build strategic funnels that will convert',
+        description: 'Expert IT Advice',
         href: '/services/it-consulting/',
         icon: ChatBubbleBottomCenterTextIcon
     },
     {
         name: 'Maintenance and Support',
-        description: "Your customers' data will be safe and secure",
+        description: "Ongoing Tech Support",
         href: '/services/maintenance-and-support/',
         icon: WrenchIcon },
     {
         name: 'Smart Teams',
-        description: 'Edit, manage and create newly informed decisions',
+        description: 'Dedicated Tech Teams',
         href: '/services/smart-teams/',
         icon: UsersIcon,
     },
     {
         name: 'Software Engineering Services',
-        description: 'Edit, manage and create newly informed decisions',
+        description: 'Advanced Software Solutions',
         href: '/services/software-engineering/',
         icon: CodeBracketSquareIcon,
     },
 ]
 
 const company = [
-    { name: 'About Us', description: 'Get a better understanding of your traffic', href: '/company/about/', icon: UsersIcon },
-    { name: 'Approach', description: 'Speak directly to your customers', href: '/company/approach/', icon: LightBulbIcon },
-    { name: 'Partnership', description: 'Your customers’ data will be safe and secure', href: '/company/partnership/', icon: HandRaisedIcon },
-    { name: 'Why Us', description: 'Connect with third-party tools', href: '/company/why-us/', icon: HandThumbUpIcon },
+    { name: 'About Us', description: 'Learn About Our Company', href: '/company/about/', icon: UsersIcon },
+    { name: 'Approach', description: 'Our Unique Methodology', href: '/company/approach/', icon: LightBulbIcon },
+    { name: 'Partnership', description: 'Collaborative Efforts', href: '/company/partnership/', icon: HandRaisedIcon },
+    { name: 'Why Us', description: 'Why Choose Empuls3?', href: '/company/why-us/', icon: HandThumbUpIcon },
 ]
 const companyCallsToAction = [
     { name: 'Explore Our Solutions', href: '#', icon: ArrowTrendingUpIcon },
