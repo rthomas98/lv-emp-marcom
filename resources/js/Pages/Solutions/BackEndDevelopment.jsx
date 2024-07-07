@@ -1,54 +1,101 @@
 import Marcom from "@/Layouts/MarcomLayout.jsx";
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import {
-    ChatBubbleOvalLeftEllipsisIcon,
-    CloudArrowUpIcon, HeartIcon,
-    LockClosedIcon,
-    PencilSquareIcon,
-    ServerIcon,
-    TrashIcon
-} from "@heroicons/react/20/solid";
+    BeakerIcon,
+    CheckIcon, MapIcon,
+    RocketLaunchIcon,
+} from '@heroicons/react/24/outline'
+import {Link} from "@inertiajs/react";
+import ClientLogos from "@/Components/ClientLogos.jsx";
 
 const features = [
     {
-        name: 'Spam report',
+        name: 'Requirement Analysis',
         description:
-            'Autem reprehenderit aut debitis ut. Officiis harum omnis placeat blanditiis delectus sint vel et voluptatum. Labore asperiores non corporis molestiae.',
-        icon: TrashIcon,
+            'We begin by understanding your business needs and technical requirements to design a back-end solution that fits perfectly.',
+        icon: CheckIcon,
     },
     {
-        name: 'Compose in markdown',
+        name: 'Architecture Design',
         description:
-            'Illum et aut inventore. Ut et dignissimos quasi. Omnis saepe dolorum. Hic autem fugiat. Voluptatem officiis necessitatibus est.',
-        icon: PencilSquareIcon,
+            'Our team designs a robust architecture that ensures scalability, security, and high performance for your applications.',
+        icon: MapIcon,
     },
     {
-        name: 'Email commenting',
+        name: 'Development and Integration',
         description:
-            'Commodi quam quo. In quasi mollitia optio voluptate et est reiciendis. Ut et sunt id officiis vitae perspiciatis. Et accusantium sapiente.',
-        icon: ChatBubbleOvalLeftEllipsisIcon,
+            'We develop and integrate the back-end components, ensuring seamless communication and functionality with the front-end.',
+        icon: RocketLaunchIcon,
     },
     {
-        name: 'Customer connections',
+        name: 'Testing and Deployment',
         description:
-            'Deserunt corrupti praesentium quo vel cupiditate est occaecati ad. Aperiam libero modi similique iure praesentium facilis quo cumque quibusdam.',
-        icon: HeartIcon,
+            'Rigorous testing is conducted to ensure the back-end system is secure and performs optimally before deployment.',
+        icon: BeakerIcon,
     },
 ]
 
 const faqs = [
     {
-        question: 'How do you make holy water?',
+        question: 'What technologies do you use for back-end development?',
         answer:
-            'You boil the hell out of it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.',
+            'We use a variety of technologies including Node.js, Python, Java, and more, depending on the project requirements.',
     },
-    // More questions...
+    {
+        question: 'Can you integrate third-party services?',
+        answer:
+            'Yes, we can integrate various third-party services and APIs to enhance the functionality of your applications.',
+    },
+    {
+        question: 'How do you ensure the security of the back-end systems?',
+        answer:
+            'We implement advanced security measures such as encryption, secure authentication, and regular security audits.',
+    },
+    {
+        question: 'Do you offer ongoing maintenance and support?',
+        answer:
+            'Yes, we provide continuous maintenance and support to ensure your back-end systems remain up-to-date and perform optimally.',
+    },
+    {
+        question: 'What is your approach to scalability?',
+        answer:
+            'We design back-end systems with scalability in mind, using architectures that can handle increased loads and traffic seamlessly.',
+    },
+    {
+        question: 'How long does it typically take to develop a back-end solution?',
+        answer:
+            'The development timeline varies based on the project\'s complexity, but we work efficiently to meet agreed-upon deadlines.',
+    },
+
 ]
 
 export default function BackEndDevelopment() {
     return (
         <Marcom>
-            <div className="bg-white overflow-hidden">
+            <div className="bg-white relative isolate overflow-hidden">
+                <svg
+                    aria-hidden="true"
+                    className="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+                >
+                    <defs>
+                        <pattern
+                            x="50%"
+                            y={-1}
+                            id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527"
+                            width={200}
+                            height={200}
+                            patternUnits="userSpaceOnUse"
+                        >
+                            <path d="M100 200V.5M.5 .5H200" fill="none"/>
+                        </pattern>
+                    </defs>
+                    <svg x="50%" y={-1} className="overflow-visible fill-gray-50">
+                        <path
+                            d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
+                            strokeWidth={0}
+                        />
+                    </svg>
+                    <rect fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" width="100%" height="100%" strokeWidth={0}/>
+                </svg>
 
                 <div className="relative isolate px-6 pt-14 lg:px-8">
                     <div
@@ -64,35 +111,27 @@ export default function BackEndDevelopment() {
                         />
                     </div>
                     <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-                        <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-                            <div
-                                className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                                Announcing our next round of funding.{' '}
-                                <a href="#" className="font-semibold text-indigo-600">
-                                    <span className="absolute inset-0" aria-hidden="true"/>
-                                    Read more <span aria-hidden="true">&rarr;</span>
-                                </a>
-                            </div>
-                        </div>
+
                         <div className="text-center">
-                            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                                Data to enrich your online business
+                            <div
+                                className="col-start-1 row-start-1 h-7 text-base font-semibold leading-7 text-em-pink"
+                                aria-hidden="true">Driving Success with Custom Technologies
+                            </div>
+                            <h1 className="mt-4 max-w-[36rem] text-4xl font-extrabold tracking-tight text-slate-900 sm:text-7xl xl:max-w-[43.5rem]">
+                                Back-End Development Solutions
                             </h1>
-                            <p className="mt-6 text-lg leading-8 text-gray-600">
-                                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat
-                                commodo. Elit sunt amet
-                                fugiat veniam occaecat fugiat aliqua.
+                            <p className="mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
+                                Empuls3 offers comprehensive back-end development solutions that ensure your applications are secure, scalable, and reliable. Our expert team delivers robust back-end systems that support your business needs.
                             </p>
                             <div className="mt-10 flex items-center justify-center gap-x-6">
-                                <a
-                                    href="#"
-                                    className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                                >
-                                    Get started
-                                </a>
-                                <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-                                    Learn more <span aria-hidden="true">→</span>
-                                </a>
+                                <Link href="/company/about"
+                                      className="relative h-12 overflow-hidden rounded bg-em-pink px-5 py-2.5 font-semibold text-white transition-all duration-300 hover:bg-em-purple hover:ring-2 hover:ring-em-pink hover:ring-offset-2">
+                                    <span className="relative">Learn More About Us</span>
+                                </Link>
+                                <Link href="/services/services-overview"
+                                      className="font-semibold leading-6 text-em-purple hover:text-em-pink">
+                                    View Our Servicess <span aria-hidden="true">→</span>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -144,13 +183,15 @@ export default function BackEndDevelopment() {
                         className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
                         <div className="lg:pr-4">
                             <div className="lg:max-w-lg">
-                                <p className="text-base font-semibold leading-7 text-indigo-600">Deploy faster</p>
-                                <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">A
-                                    better workflow</h1>
-                                <p className="mt-6 text-xl leading-8 text-gray-700">
-                                    Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui
-                                    mi, nibh dui, diam
-                                    eget aliquam. Quisque id at vitae feugiat egestas.
+                                <h2
+                                    className="col-start-1 row-start-1 h-7 text-base font-semibold leading-7 text-em-pink mb-4"
+                                    aria-hidden="true">Engineered for Excellence
+                                </h2>
+                                <div className="mb-4 text-4xl font-extrabold tracking-tight text-slate-900">
+                                    About Our Back-End Development Solutions
+                                </div>
+                                <p>
+                                    At Empuls3, our back-end development services are designed to provide a solid foundation for your applications. We focus on creating secure, scalable, and high-performance back-end systems that can handle your business's growing demands. Our team of experienced developers uses the latest technologies and best practices to deliver solutions that meet your specific requirements.
                                 </p>
                             </div>
                         </div>
@@ -159,7 +200,7 @@ export default function BackEndDevelopment() {
                         className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
                         <img
                             className="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
-                            src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
+                            src="/images/be-about-img.png"
                             alt=""
                         />
                     </div>
@@ -168,58 +209,11 @@ export default function BackEndDevelopment() {
                         <div className="lg:pr-4">
                             <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
                                 <p>
-                                    Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis
-                                    mauris semper sed amet
-                                    vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra
-                                    tellus varius sit neque
-                                    erat velit. Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim.
-                                    Mattis mauris
-                                    semper sed amet vitae sed turpis id.
+                                    Our approach to back-end development involves a thorough understanding of your business processes and goals. We work closely with you to identify the right technologies and architecture that will ensure the optimal performance of your applications. From database design to API development, our comprehensive services cover all aspects of back-end development.
                                 </p>
-                                <ul role="list" className="mt-8 space-y-8 text-gray-600">
-                                    <li className="flex gap-x-3">
-                                        <CloudArrowUpIcon className="mt-1 h-5 w-5 flex-none text-indigo-600"
-                                                          aria-hidden="true"/>
-                                        <span>
-                    <strong className="font-semibold text-gray-900">Push to deploy.</strong> Lorem ipsum, dolor sit amet
-                    consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate
-                    blanditiis ratione.
-                  </span>
-                                    </li>
-                                    <li className="flex gap-x-3">
-                                        <LockClosedIcon className="mt-1 h-5 w-5 flex-none text-indigo-600"
-                                                        aria-hidden="true"/>
-                                        <span>
-                    <strong className="font-semibold text-gray-900">SSL certificates.</strong> Anim aute id magna aliqua
-                    ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.
-                  </span>
-                                    </li>
-                                    <li className="flex gap-x-3">
-                                        <ServerIcon className="mt-1 h-5 w-5 flex-none text-indigo-600"
-                                                    aria-hidden="true"/>
-                                        <span>
-                    <strong className="font-semibold text-gray-900">Database backups.</strong> Ac tincidunt sapien
-                    vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
-                  </span>
-                                    </li>
-                                </ul>
+
                                 <p className="mt-8">
-                                    Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id
-                                    blandit molestie auctor
-                                    fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate
-                                    et ultrices hac
-                                    adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.
-                                </p>
-                                <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">No server? No
-                                    problem.</h2>
-                                <p className="mt-6">
-                                    Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam consequat in. Convallis
-                                    arcu ipsum urna nibh.
-                                    Pharetra, euismod vitae interdum mauris enim, consequat vulputate nibh. Maecenas
-                                    pellentesque id sed
-                                    tellus mauris, ultrices mauris. Tincidunt enim cursus ridiculus mi. Pellentesque nam
-                                    sed nullam sed diam
-                                    turpis ipsum eu a sed convallis diam.
+                                    With a focus on security and scalability, we ensure that your back-end systems are built to last. Whether you need a simple API or a complex microservices architecture, Empuls3 has the expertise to deliver solutions that drive efficiency and growth.
                                 </p>
                             </div>
                         </div>
@@ -231,14 +225,14 @@ export default function BackEndDevelopment() {
                     <div
                         className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                            Stay on top of customer support
+                            Our Back-End Development Process
                         </h2>
                         <dl className="col-span-2 grid grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2">
                             {features.map((feature) => (
                                 <div key={feature.name}>
                                     <dt className="text-base font-semibold leading-7 text-gray-900">
                                         <div
-                                            className="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                                            className="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-em-pink">
                                             <feature.icon className="h-6 w-6 text-white" aria-hidden="true"/>
                                         </div>
                                         {feature.name}
@@ -250,99 +244,42 @@ export default function BackEndDevelopment() {
                     </div>
                 </div>
             </div>
-            <div className="bg-gray-900 py-24 sm:py-32">
-                <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                    <h2 className="text-center text-lg font-semibold leading-8 text-white">
-                        Trusted by the world’s most innovative teams
-                    </h2>
-                    <div
-                        className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-                        <img
-                            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                            src="https://tailwindui.com/img/logos/158x48/transistor-logo-white.svg"
-                            alt="Transistor"
-                            width={158}
-                            height={48}
-                        />
-                        <img
-                            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                            src="https://tailwindui.com/img/logos/158x48/reform-logo-white.svg"
-                            alt="Reform"
-                            width={158}
-                            height={48}
-                        />
-                        <img
-                            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                            src="https://tailwindui.com/img/logos/158x48/tuple-logo-white.svg"
-                            alt="Tuple"
-                            width={158}
-                            height={48}
-                        />
-                        <img
-                            className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-                            src="https://tailwindui.com/img/logos/158x48/savvycal-logo-white.svg"
-                            alt="SavvyCal"
-                            width={158}
-                            height={48}
-                        />
-                        <img
-                            className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-                            src="https://tailwindui.com/img/logos/158x48/statamic-logo-white.svg"
-                            alt="Statamic"
-                            width={158}
-                            height={48}
-                        />
-                    </div>
-                </div>
-            </div>
+            <ClientLogos/>
             <div className="bg-white py-24 sm:py-32">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
-                        <p className="text-base font-semibold leading-7 text-indigo-600">Deploy faster</p>
-                        <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">A better
-                            workflow</h1>
+                        <h2
+                            className="col-start-1 row-start-1 h-7 text-base font-semibold leading-7 text-em-pink mb-4"
+                            aria-hidden="true">The Empuls3 Advantages
+                        </h2>
+                        <div className="mb-4 text-4xl font-extrabold tracking-tight text-slate-900">
+                            Why Choose Our Back-End Development Solutions
+                        </div>
+                        <p className="mt-6 text-lg leading-8 text-gray-600">
+                            Choosing Empuls3 for your back-end development needs means partnering with a team that prioritizes your business success. Our developers are skilled in the latest technologies and follow industry best practices to deliver solutions that are not only robust but also future-proof. We understand that the back-end is the backbone of any application, and we ensure it is built to support your business operations seamlessly.
+                        </p>
                         <div
                             className="mt-10 grid max-w-xl grid-cols-1 gap-8 text-base leading-7 text-gray-700 lg:max-w-none lg:grid-cols-2">
                             <div>
                                 <p>
-                                    Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis
-                                    mauris semper sed amet
-                                    vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra
-                                    tellus varius sit neque
-                                    erat velit. Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim.
-                                    Mattis mauris
-                                    semper sed amet vitae sed turpis id.
+                                    Our focus on security ensures that your data is protected against potential threats. We implement advanced security measures to safeguard your applications and data, giving you peace of mind. Scalability is another key aspect of our back-end solutions. We design systems that can grow with your business, accommodating increased traffic and data loads without compromising performance.
                                 </p>
                                 <p className="mt-8">
-                                    Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id
-                                    blandit molestie auctor
-                                    fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate
-                                    et ultrices hac
-                                    adipiscing egestas.
+                                    In addition to our technical expertise, we emphasize clear and effective communication throughout the project lifecycle. Our collaborative approach ensures that you are kept informed at every stage, from initial planning to final deployment. This transparency builds trust and ensures that the final product aligns perfectly with your vision and requirements.
                                 </p>
                             </div>
                             <div>
+
                                 <p>
-                                    Erat pellentesque dictumst ligula porttitor risus eget et eget. Ultricies tellus
-                                    felis id dignissim
-                                    eget. Est augue maecenas risus nulla ultrices congue nunc tortor.
-                                </p>
-                                <p className="mt-8">
-                                    Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id
-                                    blandit molestie auctor
-                                    fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate
-                                    et ultrices hac
-                                    adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.
+                                    With Empuls3, you get a partner who is dedicated to your success. We provide continuous support and maintenance to ensure your back-end systems remain up-to-date and perform optimally. Our commitment to excellence and client satisfaction sets us apart as a trusted provider of back-end development solutions.
                                 </p>
                             </div>
                         </div>
                         <div className="mt-10 flex">
-                            <a
-                                href="#"
-                                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                            >
-                                Get started
-                            </a>
+                            <Link href="/company/about"
+                                  className="relative h-12 overflow-hidden rounded bg-em-pink px-5 py-2.5 font-semibold text-white transition-all duration-300 hover:bg-em-purple hover:ring-2 hover:ring-em-pink hover:ring-offset-2">
+                                <span className="relative">Learn More About Us</span>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -350,7 +287,7 @@ export default function BackEndDevelopment() {
                     <div className="mx-auto max-w-7xl px-6 lg:px-8">
                         <img
                             className="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-gray-900/10"
-                            src="https://tailwindui.com/img/component-images/project-app-screenshot.png"
+                            src="/images/be-why-img.png"
                             alt=""
                         />
                         <div className="relative" aria-hidden="true">
@@ -359,18 +296,51 @@ export default function BackEndDevelopment() {
                     </div>
                 </div>
             </div>
-            <div className="bg-white">
+            <div className="relative isolate bg-white">
+                <div
+                    aria-hidden="true"
+                    className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+                >
+                    <div
+                        style={{
+                            clipPath:
+                                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+                        }}
+                        className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+                    />
+                </div>
+                <svg
+                    aria-hidden="true"
+                    className="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+                >
+                    <defs>
+                        <pattern
+                            x="50%"
+                            y={-1}
+                            id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527"
+                            width={200}
+                            height={200}
+                            patternUnits="userSpaceOnUse"
+                        >
+                            <path d="M100 200V.5M.5 .5H200" fill="none"/>
+                        </pattern>
+                    </defs>
+                    <svg x="50%" y={-1} className="overflow-visible fill-gray-50">
+                        <path
+                            d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
+                            strokeWidth={0}
+                        />
+                    </svg>
+                    <rect fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" width="100%" height="100%" strokeWidth={0}/>
+                </svg>
                 <div className="mx-auto max-w-7xl px-6 py-24 sm:pt-32 lg:px-8 lg:py-40">
                     <div className="lg:grid lg:grid-cols-12 lg:gap-8">
                         <div className="lg:col-span-5">
-                            <h2 className="text-2xl font-bold leading-10 tracking-tight text-gray-900">Frequently asked
-                                questions</h2>
-                            <p className="mt-4 text-base leading-7 text-gray-600">
-                                Can’t find the answer you’re looking for? Reach out to our{' '}
-                                <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">
-                                    customer support
-                                </a>{' '}
-                                team.
+                            <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-slate-900">
+                                Frequently Asked Questions
+                            </h2>
+                            <p className="mt-6 text-lg leading-8 text-gray-600">
+                                Find answers to common questions about our back-end development services. If you need more information, feel free to contact us.
                             </p>
                         </div>
                         <div className="mt-10 lg:col-span-7 lg:mt-0">
@@ -385,29 +355,65 @@ export default function BackEndDevelopment() {
                         </div>
                     </div>
                 </div>
+                <div
+                    aria-hidden="true"
+                    className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+                >
+                    <div
+                        style={{
+                            clipPath:
+                                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+                        }}
+                        className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+                    />
+                </div>
             </div>
             <div className="bg-white">
                 <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
                     <div
-                        className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
+                        className="relative isolate overflow-hidden bg-em-pink px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
+                        <svg
+                            aria-hidden="true"
+                            className="absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+                        >
+                            <defs>
+                                <pattern
+                                    x="50%"
+                                    y={-1}
+                                    id="983e3e4c-de6d-4c3f-8d64-b9761d1534cc"
+                                    width={200}
+                                    height={200}
+                                    patternUnits="userSpaceOnUse"
+                                >
+                                    <path d="M.5 200V.5H200" fill="none"/>
+                                </pattern>
+                            </defs>
+                            <svg x="50%" y={-1} className="overflow-visible fill-gray-800/20">
+                                <path
+                                    d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z"
+                                    strokeWidth={0}
+                                />
+                            </svg>
+                            <rect fill="url(#983e3e4c-de6d-4c3f-8d64-b9761d1534cc)" width="100%" height="100%"
+                                  strokeWidth={0}/>
+                        </svg>
                         <h2 className="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                            Boost your productivity today.
+                            Ready to Strengthen Your Back-End?
                         </h2>
                         <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">
-                            Incididunt sint fugiat pariatur cupidatat consectetur sit cillum anim id veniam aliqua
-                            proident excepteur
-                            commodo do ea.
+                            Partner with Empuls3 for robust and scalable back-end development solutions. Contact us to
+                            discuss your project requirements and discover how we can help you achieve your business
+                            goals.
                         </p>
                         <div className="mt-10 flex items-center justify-center gap-x-6">
-                            <a
-                                href="#"
-                                className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                            >
-                                Get started
-                            </a>
-                            <a href="#" className="text-sm font-semibold leading-6 text-white">
-                                Learn more <span aria-hidden="true">→</span>
-                            </a>
+                            <Link href="/company/about"
+                                  className="relative h-12 overflow-hidden rounded bg-em-purple px-5 py-2.5 font-semibold text-white transition-all duration-300 hover:bg-em-yellow hover:ring-2 hover:ring-em-yellow hover:text-em-purple hover:ring-offset-2">
+                                <span className="relative">Learn More About Us</span>
+                            </Link>
+                            <Link href="/contact"
+                                  className="font-semibold leading-6 text-white hover:text-em-yellow">
+                                Ready To Get Started <span aria-hidden="true">→</span>
+                            </Link>
                         </div>
                         <svg
                             viewBox="0 0 1024 1024"

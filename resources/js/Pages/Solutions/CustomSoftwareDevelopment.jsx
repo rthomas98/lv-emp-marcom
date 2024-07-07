@@ -1,55 +1,57 @@
 import Marcom from "@/Layouts/MarcomLayout.jsx";
-import {ChevronRightIcon, CloudArrowUpIcon, LockClosedIcon, ServerIcon} from '@heroicons/react/20/solid'
+import {Link} from "@inertiajs/react";
+import {BellAlertIcon, CircleStackIcon, ShieldCheckIcon} from "@heroicons/react/24/outline";
+import ClientLogos from "@/Components/ClientLogos.jsx";
 
 const features = [
     {
-        name: 'Push to deploy.',
+        name: 'Personalized Solutions:',
         description:
-            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-        icon: CloudArrowUpIcon,
+            'We design software that is uniquely tailored to your business needs, ensuring maximum efficiency and effectiveness.',
+        icon: BellAlertIcon,
     },
     {
-        name: 'SSL certificates.',
-        description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
-        icon: LockClosedIcon,
+        name: 'Scalable Architecture: ',
+        description: 'Our solutions are built with scalability in mind, allowing your software to grow with your business.',
+        icon: CircleStackIcon,
     },
     {
-        name: 'Database backups.',
-        description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-        icon: ServerIcon,
+        name: 'Robust Security',
+        description: 'We implement advanced security measures to protect your data and ensure the integrity of your software.',
+        icon: ShieldCheckIcon,
     },
 ]
 
 const featurestwo = [
     {
-        name: 'Push to deploy.',
+        name: 'Initial Consultation',
         description:
-            'Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.',
+            'We start by understanding your business requirements and goals to design a custom software solution.',
     },
     {
-        name: 'SSL certificates.',
+        name: 'Requirement Analysis',
         description:
-            'Mollitia delectus a omnis. Quae velit aliquid. Qui nulla maxime adipisci illo id molestiae. Cumque cum ut minus rerum architecto magnam consequatur. Quia quaerat minima.',
+            'Our team conducts a detailed analysis of your needs to define the scope and functionalities of the software.',
     },
     {
-        name: 'Simple queues.',
+        name: 'Design and Prototyping',
         description:
-            'Aut repellendus et officiis dolor possimus. Deserunt velit quasi sunt fuga error labore quia ipsum. Commodi autem voluptatem nam. Quos voluptatem totam.',
+            'We create detailed designs and prototypes to visualize the final product and gather feedback.',
     },
     {
-        name: 'Advanced security.',
+        name: 'Development',
         description:
-            'Magnam provident veritatis odit. Vitae eligendi repellat non. Eum fugit impedit veritatis ducimus. Non qui aspernatur laudantium modi. Praesentium rerum error deserunt harum.',
+            'Our developers build the software using the latest technologies and best practices, ensuring high performance and reliability.',
     },
     {
-        name: 'Powerful API.',
+        name: 'Testing and Quality Assurance',
         description:
-            'Sit minus expedita quam in ullam molestiae dignissimos in harum. Tenetur dolorem iure. Non nesciunt dolorem veniam necessitatibus laboriosam voluptas perspiciatis error.',
+            'Rigorous testing is conducted to identify and fix any issues, ensuring the software meets our high-quality standards.',
     },
     {
-        name: 'Database backups.',
+        name: 'Deployment and Support',
         description:
-            'Ipsa in earum deserunt aut. Quos minus aut animi et soluta. Ipsum dicta ut quia eius. Possimus reprehenderit iste aspernatur ut est velit consequatur distinctio.',
+            'We deploy the software and provide ongoing support to ensure it operates smoothly and effectively.',
     },
 ]
 
@@ -67,7 +69,19 @@ export default function CustomSoftwareDevelopment() {
     return (
         <Marcom>
             <div className="bg-white">
-                <div className="relative isolate pt-14">
+                <div className="relative isolate pt-14 overflow-hidden">
+                    <div
+                        aria-hidden="true"
+                        className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+                    >
+                        <div
+                            style={{
+                                clipPath:
+                                    'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+                            }}
+                            className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+                        />
+                    </div>
                     <svg
                         className="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
                         aria-hidden="true"
@@ -96,36 +110,26 @@ export default function CustomSoftwareDevelopment() {
                     <div
                         className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-40">
                         <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-                            <div className="flex">
-                                <div
-                                    className="relative flex items-center gap-x-4 rounded-full px-4 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                                    <span className="font-semibold text-indigo-600">We’re hiring</span>
-                                    <span className="h-4 w-px bg-gray-900/10" aria-hidden="true"/>
-                                    <a href="#" className="flex items-center gap-x-1">
-                                        <span className="absolute inset-0" aria-hidden="true"/>
-                                        See open positions
-                                        <ChevronRightIcon className="-mr-2 h-5 w-5 text-gray-400" aria-hidden="true"/>
-                                    </a>
-                                </div>
+
+                            <div
+                                className="col-start-1 row-start-1 h-7 text-base font-semibold leading-7 text-em-pink"
+                                aria-hidden="true">Tailored to Your Needs
                             </div>
-                            <h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                                A better way to ship your projects
+                            <h1 className="mt-4 max-w-[36rem] text-4xl font-extrabold tracking-tight text-slate-900 sm:text-7xl xl:max-w-[43.5rem]">
+                                Custom Software Development
                             </h1>
-                            <p className="mt-6 text-lg leading-8 text-gray-600">
-                                Esse id magna consectetur fugiat non dolor in ad laboris magna laborum ea consequat.
-                                Nisi irure aliquip
-                                nisi adipisicing veniam voluptate id. In veniam incididunt ex veniam adipisicing sit.
+                            <p className="mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
+                                Empuls3 offers bespoke software development solutions designed to meet the unique needs of your business. Our expert team crafts custom software that enhances efficiency, drives innovation, and supports your business goals.
                             </p>
                             <div className="mt-10 flex items-center gap-x-6">
-                                <a
-                                    href="#"
-                                    className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                                >
-                                    Get started
-                                </a>
-                                <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-                                    Learn more <span aria-hidden="true">→</span>
-                                </a>
+                                <Link href="/company/about"
+                                      className="relative h-12 overflow-hidden rounded bg-em-pink px-5 py-2.5 font-semibold text-white transition-all duration-300 hover:bg-em-purple hover:ring-2 hover:ring-em-pink hover:ring-offset-2">
+                                    <span className="relative">Learn More About Us</span>
+                                </Link>
+                                <Link href="/contact"
+                                      className="font-semibold leading-6 text-em-purple hover:text-em-pink">
+                                    Ready To Get Started? <span aria-hidden="true">→</span>
+                                </Link>
                             </div>
                         </div>
                         <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
@@ -151,7 +155,8 @@ export default function CustomSoftwareDevelopment() {
                                     transform="translate(24 24)"
                                     clipPath="url(#2ade4387-9c63-4fc4-b754-10e687a0d332)"
                                 >
-                                    <img src="https://tailwindui.com/img/component-images/mobile-app-screenshot.png"
+                                    <img src="/images/csd-hero-img.png"
+                                            className="w-full h-full object-cover"
                                          alt=""/>
                                 </foreignObject>
                             </svg>
@@ -165,19 +170,21 @@ export default function CustomSoftwareDevelopment() {
                         className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
                         <div className="lg:ml-auto lg:pl-4 lg:pt-4">
                             <div className="lg:max-w-lg">
-                                <h2 className="text-base font-semibold leading-7 text-indigo-600">Deploy faster</h2>
-                                <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">A better
-                                    workflow</p>
+                                <h2
+                                    className="col-start-1 row-start-1 h-7 text-base font-semibold leading-7 text-em-pink mb-4"
+                                    aria-hidden="true">Engineered for Excellence
+                                </h2>
+                                <div className="mb-4 text-4xl font-extrabold tracking-tight text-slate-900">
+                                    About Our Custom Software Development Solution
+                                </div>
                                 <p className="mt-6 text-lg leading-8 text-gray-600">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
-                                    perferendis suscipit eaque,
-                                    iste dolor cupiditate blanditiis ratione.
+                                    At Empuls3, we specialize in creating custom software solutions tailored to the unique requirements of our clients. Our team of skilled developers works closely with you to understand your business processes and challenges, designing software that fits seamlessly into your operations. From initial consultation to final deployment, we ensure that your custom software is not only functional but also scalable and secure.
                                 </p>
                                 <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
                                     {features.map((feature) => (
                                         <div key={feature.name} className="relative pl-9">
                                             <dt className="inline font-semibold text-gray-900">
-                                                <feature.icon className="absolute left-1 top-1 h-5 w-5 text-indigo-600"
+                                                <feature.icon className="absolute left-1 top-1 h-5 w-5 text-em-pink"
                                                               aria-hidden="true"/>
                                                 {feature.name}
                                             </dt>
@@ -190,7 +197,7 @@ export default function CustomSoftwareDevelopment() {
                         </div>
                         <div className="flex items-start justify-end lg:order-first">
                             <img
-                                src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
+                                src="/images/csd-img-3.png"
                                 alt="Product screenshot"
                                 className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
                                 width={2432}
@@ -200,15 +207,38 @@ export default function CustomSoftwareDevelopment() {
                     </div>
                 </div>
             </div>
-            <div className="bg-white py-24 sm:py-32">
+            <div className="relative isolate bg-white py-24 sm:py-32">
+                <svg
+                    aria-hidden="true"
+                    className="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_left,white,transparent)]"
+                >
+                    <defs>
+                        <pattern
+                            x="50%"
+                            y={-1}
+                            id="0787a7c5-978c-4f66-83c7-11c213f99cb7"
+                            width={200}
+                            height={200}
+                            patternUnits="userSpaceOnUse"
+                        >
+                            <path d="M.5 200V.5H200" fill="none"/>
+                        </pattern>
+                    </defs>
+                    <rect fill="url(#0787a7c5-978c-4f66-83c7-11c213f99cb7)" width="100%" height="100%" strokeWidth={0}/>
+                </svg>
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto max-w-2xl lg:mx-0">
-                        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">All-in-one
-                            platform</h2>
+                        <h2
+                            className="col-start-1 row-start-1 h-7 text-base font-semibold leading-7 text-em-pink mb-4"
+                            aria-hidden="true"> From Concept to Completion
+                        </h2>
+                        <div className="mb-4 text-4xl font-extrabold tracking-tight text-slate-900">
+                            Our Custom Software Development Process
+                        </div>
                         <p className="mt-6 text-lg leading-8 text-gray-600">
-                            Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate
-                            veritatis in
-                            accusamus quisquam.
+                            Our comprehensive process ensures that every aspect of your custom software development is
+                            meticulously planned and executed, resulting in a solution that perfectly aligns with your
+                            business needs.
                         </p>
                     </div>
                     <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
@@ -221,51 +251,8 @@ export default function CustomSoftwareDevelopment() {
                     </dl>
                 </div>
             </div>
-            <div className="bg-gray-900 py-24 sm:py-32">
-                <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                    <h2 className="text-center text-lg font-semibold leading-8 text-white">
-                        Trusted by the world’s most innovative teams
-                    </h2>
-                    <div
-                        className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-                        <img
-                            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                            src="https://tailwindui.com/img/logos/158x48/transistor-logo-white.svg"
-                            alt="Transistor"
-                            width={158}
-                            height={48}
-                        />
-                        <img
-                            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                            src="https://tailwindui.com/img/logos/158x48/reform-logo-white.svg"
-                            alt="Reform"
-                            width={158}
-                            height={48}
-                        />
-                        <img
-                            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                            src="https://tailwindui.com/img/logos/158x48/tuple-logo-white.svg"
-                            alt="Tuple"
-                            width={158}
-                            height={48}
-                        />
-                        <img
-                            className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-                            src="https://tailwindui.com/img/logos/158x48/savvycal-logo-white.svg"
-                            alt="SavvyCal"
-                            width={158}
-                            height={48}
-                        />
-                        <img
-                            className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-                            src="https://tailwindui.com/img/logos/158x48/statamic-logo-white.svg"
-                            alt="Statamic"
-                            width={158}
-                            height={48}
-                        />
-                    </div>
-                </div>
-            </div>
+            <ClientLogos/>
+
             <div className="relative bg-white">
                 <div className="mx-auto max-w-7xl lg:flex lg:justify-between lg:px-8 xl:justify-end">
                     <div
@@ -273,7 +260,7 @@ export default function CustomSoftwareDevelopment() {
                         <div className="relative h-80 lg:-ml-8 lg:h-auto lg:w-full lg:grow xl:ml-0">
                             <img
                                 className="absolute inset-0 h-full w-full bg-gray-50 object-cover"
-                                src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-x=.4&w=2560&h=3413&&q=80"
+                                src="/images/csd-img-4.png"
                                 alt=""
                             />
                         </div>
@@ -281,94 +268,35 @@ export default function CustomSoftwareDevelopment() {
                     <div className="px-6 lg:contents">
                         <div
                             className="mx-auto max-w-2xl pb-24 pt-16 sm:pb-32 sm:pt-20 lg:ml-8 lg:mr-0 lg:w-full lg:max-w-lg lg:flex-none lg:pt-32 xl:w-1/2">
-                            <p className="text-base font-semibold leading-7 text-indigo-600">Deploy faster</p>
-                            <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">A better
-                                workflow</h1>
-                            <p className="mt-6 text-xl leading-8 text-gray-700">
-                                Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi,
-                                nibh dui, diam eget
-                                aliquam. Quisque id at vitae feugiat egestas ac. Diam nulla orci at in viverra
-                                scelerisque eget. Eleifend
-                                egestas fringilla sapien.
-                            </p>
-                            <div className="mt-10 max-w-xl text-base leading-7 text-gray-700 lg:max-w-none">
-                                <p>
-                                    Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis
-                                    mauris semper sed amet
-                                    vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra
-                                    tellus varius sit neque
-                                    erat velit. Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim.
-                                    Mattis mauris
-                                    semper sed amet vitae sed turpis id.
-                                </p>
-                                <ul role="list" className="mt-8 space-y-8 text-gray-600">
-                                    <li className="flex gap-x-3">
-                                        <CloudArrowUpIcon className="mt-1 h-5 w-5 flex-none text-indigo-600"
-                                                          aria-hidden="true"/>
-                                        <span>
-                    <strong className="font-semibold text-gray-900">Push to deploy.</strong> Lorem ipsum, dolor sit amet
-                    consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate
-                    blanditiis ratione.
-                  </span>
-                                    </li>
-                                    <li className="flex gap-x-3">
-                                        <LockClosedIcon className="mt-1 h-5 w-5 flex-none text-indigo-600"
-                                                        aria-hidden="true"/>
-                                        <span>
-                    <strong className="font-semibold text-gray-900">SSL certificates.</strong> Anim aute id magna aliqua
-                    ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.
-                  </span>
-                                    </li>
-                                    <li className="flex gap-x-3">
-                                        <ServerIcon className="mt-1 h-5 w-5 flex-none text-indigo-600"
-                                                    aria-hidden="true"/>
-                                        <span>
-                    <strong className="font-semibold text-gray-900">Database backups.</strong> Ac tincidunt sapien
-                    vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
-                  </span>
-                                    </li>
-                                </ul>
-                                <p className="mt-8">
-                                    Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id
-                                    blandit molestie auctor
-                                    fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate
-                                    et ultrices hac
-                                    adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.
-                                </p>
-                                <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">No server? No
-                                    problem.</h2>
-                                <p className="mt-6">
-                                    Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam consequat in. Convallis
-                                    arcu ipsum urna nibh.
-                                    Pharetra, euismod vitae interdum mauris enim, consequat vulputate nibh. Maecenas
-                                    pellentesque id sed
-                                    tellus mauris, ultrices mauris. Tincidunt enim cursus ridiculus mi. Pellentesque nam
-                                    sed nullam sed diam
-                                    turpis ipsum eu a sed convallis diam.
-                                </p>
+                            <h2
+                                className="col-start-1 row-start-1 h-7 text-base font-semibold leading-7 text-em-pink mb-4"
+                                aria-hidden="true"> The Empuls3 Difference
+                            </h2>
+                            <div className="mb-4 text-4xl font-extrabold tracking-tight text-slate-900">
+                                Why Choose Our Custom Software Development Solution
                             </div>
+                            <p className="mt-6 text-lg leading-8 text-gray-600">
+                                Choosing Empuls3 for your custom software development means partnering with a team that prioritizes your business's unique needs and goals. Our approach is centered around understanding your specific challenges and designing solutions that address them effectively. We take the time to learn about your business processes, ensuring that the software we develop fits seamlessly into your operations and enhances productivity.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="bg-indigo-100">
+            <div className="bg-em-pink">
                 <div
                     className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:justify-between lg:px-8">
-                    <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                        Ready to dive in?
-                        <br/>
-                        Start your free trial today.
+                    <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-white">
+                        Ready to Build Your Custom Software?
                     </h2>
                     <div className="mt-10 flex items-center gap-x-6 lg:mt-0 lg:flex-shrink-0">
-                        <a
-                            href="#"
-                            className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                        >
-                            Get started
-                        </a>
-                        <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-                            Learn more <span aria-hidden="true">→</span>
-                        </a>
+                        <Link href="/company/about"
+                              className="relative h-12 overflow-hidden rounded bg-em-yellow px-5 py-2.5 font-semibold text-white transition-all duration-300 hover:bg-em-purple hover:ring-2 hover:ring-em-pink hover:ring-offset-2">
+                            <span className="relative">Learn More About Us</span>
+                        </Link>
+                        <Link href="/contact"
+                              className="font-semibold leading-6 text-white hover:text-em-yellow">
+                            Get Started <span aria-hidden="true">→</span>
+                        </Link>
                     </div>
                 </div>
             </div>

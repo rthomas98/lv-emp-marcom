@@ -78,6 +78,10 @@ Route::get('/solutions/react-native-development', function () {
     return Inertia::render('Solutions/ReactNativeDev');
 })->name('react-native-development');
 
+Route::get('/solutions/full-stack-development', function () {
+    return Inertia::render('Solutions/FullStackDevelopment');
+})->name('full-stack-development');
+
 Route::get('/solutions/software-development-and-design', function () {
     return Inertia::render('Solutions/SoftwareDevDesign');
 })->name('software-development-and-design');
