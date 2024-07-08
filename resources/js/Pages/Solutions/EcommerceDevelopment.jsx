@@ -1,133 +1,191 @@
 import Marcom from "@/Layouts/MarcomLayout.jsx";
 import {
-    ArrowPathIcon,
-    CloudArrowUpIcon,
-    Cog6ToothIcon,
     FingerPrintIcon,
-    LockClosedIcon,
-    ServerIcon,
 } from '@heroicons/react/20/solid'
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
-import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline'
+import {
+    BellAlertIcon,
+    ChartPieIcon,
+    MinusSmallIcon,
+    PlusSmallIcon,
+    ViewColumnsIcon,
+    ViewfinderCircleIcon,
+    WrenchIcon
+} from '@heroicons/react/24/outline'
+import ClientLogos from "@/Components/ClientLogos.jsx";
+import {Link} from "@inertiajs/react";
 
 const faqs = [
     {
-        question: "What's the best thing about Switzerland?",
+        question: "What is e-commerce development?",
         answer:
-            "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+            "E-commerce development involves creating online stores with features tailored to your specific business needs.",
     },
-    // More questions...
+    {
+        question: "How long does it take to develop an e-commerce website?",
+        answer:
+            "The timeline varies based on the project’s complexity, but we aim to deliver within agreed-upon deadlines.",
+    },
+    {
+        question: "Can you redesign my existing e-commerce site?",
+        answer:
+            "Yes, we can revamp your existing e-commerce site to improve its design, functionality, and performance.\n",
+    },
+    {
+        question: "Do you offer ongoing support and maintenance?",
+        answer:
+            "Absolutely, we provide continuous support and maintenance to keep your online store up-to-date and running smoothly.",
+    },
+    {
+        question: "Is SEO included in your e-commerce development services?",
+        answer:
+            "Yes, we optimize your online store for search engines to enhance visibility and drive organic traffic.",
+    },
+    {
+        question: "Can you integrate secure payment gateways?",
+        answer:
+            "Yes, we integrate secure payment gateways to ensure safe and smooth transactions for your customers.",
+    },
 ]
 
 const services = [
     {
-        name: 'Push to deploy.',
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.',
-        icon: CloudArrowUpIcon,
+        name: 'Responsive Design',
+        description: 'Our e-commerce websites are fully responsive, ensuring a seamless user experience across all devices.',
+        icon: ViewColumnsIcon,
     },
     {
-        name: 'SSL certificates.',
-        description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
-        icon: LockClosedIcon,
+        name: 'SEO Optimization',
+        description: 'We optimize your online store for search engines, helping you achieve higher rankings and increased visibility.',
+        icon: ViewfinderCircleIcon,
     },
     {
-        name: 'Simple queues.',
-        description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus.',
-        icon: ArrowPathIcon,
+        name: 'Custom Themes',
+        description: 'We design custom e-commerce themes that reflect your brand’s unique identity and enhance user engagement.',
+        icon: WrenchIcon,
     },
     {
-        name: 'Advanced security.',
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.',
+        name: 'Secure Payment Integration',
+        description: 'We integrate secure payment gateways to ensure safe and smooth transactions for your customers.',
         icon: FingerPrintIcon,
     },
     {
-        name: 'Powerful API.',
-        description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
-        icon: Cog6ToothIcon,
+        name: 'Advanced Analytics',
+        description: 'Our solutions include advanced analytics tools to help you track performance and make data-driven decisions.',
+        icon: ChartPieIcon,
     },
     {
-        name: 'Database backups.',
-        description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. ',
-        icon: ServerIcon,
+        name: 'Ongoing Support',
+        description: 'We provide continuous support and maintenance to ensure your online store remains up-to-date and performs optimally.',
+        icon: BellAlertIcon,
     },
 ]
 
 const stats = [
-    { label: 'Founded', value: '2021' },
-    { label: 'Employees', value: '37' },
-    { label: 'Countries', value: '12' },
-    { label: 'Raised', value: '$25M' },
+    { label: 'Successful Consultations', value: '150+' },
+    { label: 'Revenue Generated', value: '$10M+' },
+    { label: 'Transactions Processed', value: '500K+' },
+    { label: 'Ongoing Support and Maintenance', value: '200+' },
 ]
 
 export default function EcommerceDevelopment() {
     return (
         <Marcom>
-            <div className="relative bg-white">
+            <div className="relative overflow-hidden isolate bg-white">
+                <svg
+                    aria-hidden="true"
+                    className="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_left,white,transparent)]"
+                >
+                    <defs>
+                        <pattern
+                            x="50%"
+                            y={-1}
+                            id="0787a7c5-978c-4f66-83c7-11c213f99cb7"
+                            width={200}
+                            height={200}
+                            patternUnits="userSpaceOnUse"
+                        >
+                            <path d="M.5 200V.5H200" fill="none"/>
+                        </pattern>
+                    </defs>
+                    <rect fill="url(#0787a7c5-978c-4f66-83c7-11c213f99cb7)" width="100%" height="100%" strokeWidth={0}/>
+                </svg>
+                <div
+                    aria-hidden="true"
+                    className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+                >
+                    <div
+                        style={{
+                            clipPath:
+                                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+                        }}
+                        className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+                    />
+                </div>
                 <div className="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8">
                     <div className="px-6 pb-24 pt-10 sm:pb-32 lg:col-span-7 lg:px-0 lg:pb-56 lg:pt-48 xl:col-span-6">
                         <div className="mx-auto max-w-2xl lg:mx-0">
-                            <img
-                                className="h-11"
-                                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                                alt="Your Company"
-                            />
-                            <div className="hidden sm:mt-32 sm:flex lg:mt-16">
-                                <div
-                                    className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-500 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                                    Anim aute id magna aliqua ad ad non deserunt sunt.{' '}
-                                    <a href="#" className="whitespace-nowrap font-semibold text-indigo-600">
-                                        <span className="absolute inset-0" aria-hidden="true"/>
-                                        Read more <span aria-hidden="true">&rarr;</span>
-                                    </a>
-                                </div>
+                            <div
+                                className="col-start-1 row-start-1 h-7 text-base font-semibold leading-7 text-em-pink"
+                                aria-hidden="true">Empowering Your Online Businesss
                             </div>
-                            <h1 className="mt-24 text-4xl font-bold tracking-tight text-gray-900 sm:mt-10 sm:text-6xl">
-                                Data to enrich your online business
+                            <h1 className="mt-4 max-w-[36rem] text-4xl font-extrabold tracking-tight text-slate-900 sm:text-7xl xl:max-w-[43.5rem]">
+                                E-commerce Development Solutions
                             </h1>
-                            <p className="mt-6 text-lg leading-8 text-gray-600">
-                                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat
-                                commodo. Elit sunt amet
-                                fugiat veniam occaecat fugiat aliqua.
+                            <p className="mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
+                                Empuls3 offers comprehensive e-commerce development solutions designed to create
+                                powerful, scalable, and user-friendly online stores. Our expert team crafts solutions
+                                that drive sales and enhance customer engagement.
                             </p>
-                            <div className="mt-10 flex items-center gap-x-6">
-                                <a
-                                    href="#"
-                                    className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                                >
-                                    Get started
-                                </a>
-                                <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-                                    Learn more <span aria-hidden="true">→</span>
-                                </a>
-                            </div>
                         </div>
                     </div>
                     <div className="relative lg:col-span-5 lg:-mr-8 xl:absolute xl:inset-0 xl:left-1/2 xl:mr-0">
                         <img
                             className="aspect-[3/2] w-full bg-gray-50 object-cover lg:absolute lg:inset-0 lg:aspect-auto lg:h-full"
-                            src="https://images.unsplash.com/photo-1498758536662-35b82cd15e29?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2102&q=80"
-                            alt=""
+                            src="/images/ecom-hero.png"
+                            alt="Web developers using a computer together in a creative office. Two business people working on a new software developing project in an office."
                         />
                     </div>
                 </div>
             </div>
-            <div className="bg-white py-24 sm:py-32">
+            <div className="bg-white relative isolate py-24 sm:py-32">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
+                    <svg
+                        aria-hidden="true"
+                        className="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+                    >
+                        <defs>
+                            <pattern
+                                x="50%"
+                                y={-1}
+                                id="0787a7c5-978c-4f66-83c7-11c213f99cb7"
+                                width={200}
+                                height={200}
+                                patternUnits="userSpaceOnUse"
+                            >
+                                <path d="M.5 200V.5H200" fill="none"/>
+                            </pattern>
+                        </defs>
+                        <rect fill="url(#0787a7c5-978c-4f66-83c7-11c213f99cb7)" width="100%" height="100%"
+                              strokeWidth={0}/>
+                    </svg>
                     <div className="mx-auto max-w-2xl sm:text-center">
-                        <h2 className="text-base font-semibold leading-7 text-indigo-600">Everything you need</h2>
-                        <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">No server? No
-                            problem.</p>
+                        <h2
+                            className="col-start-1 row-start-1 h-7 text-base font-semibold leading-7 text-em-pink mb-4"
+                            aria-hidden="true">Designed for Success
+                        </h2>
+                        <div className="mb-4 text-4xl font-extrabold tracking-tight text-slate-900">
+                            About Our E-commerce Development Solutions
+                        </div>
                         <p className="mt-6 text-lg leading-8 text-gray-600">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis
-                            suscipit eaque, iste
-                            dolor cupiditate blanditiis.
+                            At Empuls3, we specialize in creating robust e-commerce platforms that cater to the unique needs of your business. Our development process focuses on delivering websites that are not only visually appealing but also highly functional and easy to manage. We work closely with you to understand your goals and design an online store that reflects your brand and engages your audience.
                         </p>
                     </div>
                 </div>
                 <div className="relative overflow-hidden pt-16">
                     <div className="mx-auto max-w-7xl px-6 lg:px-8">
                         <img
-                            src="https://tailwindui.com/img/component-images/project-app-screenshot.png"
+                            src="/images/ecom-img-1.png"
                             alt="App screenshot"
                             className="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-gray-900/10"
                             width={2432}
@@ -143,7 +201,7 @@ export default function EcommerceDevelopment() {
                         {services.map((services) => (
                             <div key={services.name} className="relative pl-9">
                                 <dt className="inline font-semibold text-gray-900">
-                                    <services.icon className="absolute left-1 top-1 h-5 w-5 text-indigo-600"
+                                    <services.icon className="absolute left-1 top-1 h-5 w-5 text-em-pink"
                                                    aria-hidden="true"/>
                                     {services.name}
                                 </dt>
@@ -154,209 +212,60 @@ export default function EcommerceDevelopment() {
                     </dl>
                 </div>
             </div>
-            <div className="bg-gray-900 py-24 sm:py-32">
-                <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                    <div className="grid grid-cols-1 items-center gap-x-8 gap-y-16 lg:grid-cols-2">
-                        <div className="mx-auto w-full max-w-xl lg:mx-0">
-                            <h2 className="text-3xl font-bold tracking-tight text-white">Trusted by the most innovative
-                                teams</h2>
-                            <p className="mt-6 text-lg leading-8 text-gray-300">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam
-                                sed. Quam a
-                                scelerisque amet ullamcorper eu enim et fermentum, augue.
-                            </p>
-                            <div className="mt-8 flex items-center gap-x-6">
-                                <a
-                                    href="#"
-                                    className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
-                                >
-                                    Create account
-                                </a>
-                                <a href="#" className="text-sm font-semibold text-white">
-                                    Contact us <span aria-hidden="true">&rarr;</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div
-                            className="mx-auto grid w-full max-w-xl grid-cols-2 items-center gap-y-12 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:pl-8">
-                            <img
-                                className="max-h-12 w-full object-contain object-left"
-                                src="https://tailwindui.com/img/logos/tuple-logo-white.svg"
-                                alt="Tuple"
-                                width={105}
-                                height={48}
-                            />
-                            <img
-                                className="max-h-12 w-full object-contain object-left"
-                                src="https://tailwindui.com/img/logos/reform-logo-white.svg"
-                                alt="Reform"
-                                width={104}
-                                height={48}
-                            />
-                            <img
-                                className="max-h-12 w-full object-contain object-left"
-                                src="https://tailwindui.com/img/logos/savvycal-logo-white.svg"
-                                alt="SavvyCal"
-                                width={140}
-                                height={48}
-                            />
-                            <img
-                                className="max-h-12 w-full object-contain object-left"
-                                src="https://tailwindui.com/img/logos/laravel-logo-white.svg"
-                                alt="Laravel"
-                                width={136}
-                                height={48}
-                            />
-                            <img
-                                className="max-h-12 w-full object-contain object-left"
-                                src="https://tailwindui.com/img/logos/transistor-logo-white.svg"
-                                alt="Transistor"
-                                width={158}
-                                height={48}
-                            />
-                            <img
-                                className="max-h-12 w-full object-contain object-left"
-                                src="https://tailwindui.com/img/logos/statamic-logo-white.svg"
-                                alt="Statamic"
-                                width={147}
-                                height={48}
-                            />
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-                <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-                    <div>
-                        <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
-                            Brand new
-                        </p>
-                    </div>
-                    <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
-          <span className="relative inline-block">
-            <svg
-                viewBox="0 0 52 24"
-                fill="currentColor"
-                className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
-            >
-              <defs>
-                <pattern
-                    id="34f481be-159a-4846-821d-9ca19fb6bcc5"
-                    x="0"
-                    y="0"
-                    width=".135"
-                    height=".30"
+            <ClientLogos/>
+            <div className="relative isolate bg-em-purple py-24 sm:py-32">
+                <svg
+                    aria-hidden="true"
+                    className="absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_left,white,transparent)]"
                 >
-                  <circle cx="1" cy="1" r=".7"/>
-                </pattern>
-              </defs>
-              <rect
-                  fill="url(#34f481be-159a-4846-821d-9ca19fb6bcc5)"
-                  width="52"
-                  height="24"
-              />
-            </svg>
-            <span className="relative">The</span>
-          </span>{' '}
-                        quick, brown fox jumps over a lazy dog
-                    </h2>
-                    <p className="text-base text-gray-700 md:text-lg">
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                        accusantium doloremque rem aperiam, eaque ipsa quae.
-                    </p>
-                </div>
-                <div className="grid gap-8 row-gap-5 mb-8 md:row-gap-8 lg:grid-cols-4 sm:grid-cols-2">
-                    <div
-                        className="duration-300 transform bg-white border-l-4 border-deep-purple-accent-400 hover:-translate-y-2">
-                        <div className="h-full p-5 border border-l-0 rounded-r shadow-sm">
-                            <h6 className="mb-2 font-semibold leading-5">The doctor said</h6>
-                            <p className="text-sm text-gray-900">
-                                Sportacus andrew weatherall goose Refined gentlemen super mario
-                                des lynam alpha trion zap rowsdower.
-                            </p>
-                        </div>
-                    </div>
-                    <div
-                        className="duration-300 transform bg-white border-l-4 border-deep-purple-accent-400 hover:-translate-y-2">
-                        <div className="h-full p-5 border border-l-0 rounded-r shadow-sm">
-                            <h6 className="mb-2 font-semibold leading-5">Skate ipsum dolor</h6>
-                            <p className="text-sm text-gray-900">
-                                Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </p>
-                        </div>
-                    </div>
-                    <div
-                        className="duration-300 transform bg-white border-l-4 border-deep-purple-accent-400 hover:-translate-y-2">
-                        <div className="h-full p-5 border border-l-0 rounded-r shadow-sm">
-                            <h6 className="mb-2 font-semibold leading-5">
-                                Baseball ipsum dolor
-                            </h6>
-                            <p className="text-sm text-gray-900">
-                                Bro ipsum dolor sit amet gaper backside single track, manny Bike
-                                epic clipless. Schraeder drop gondy.
-                            </p>
-                        </div>
-                    </div>
-                    <div
-                        className="duration-300 transform bg-white border-l-4 border-deep-purple-accent-400 hover:-translate-y-2">
-                        <div className="h-full p-5 border border-l-0 rounded-r shadow-sm">
-                            <h6 className="mb-2 font-semibold leading-5">They urge you</h6>
-                            <p className="text-sm text-gray-900">
-                                A flower in my garden, a mystery in my panties. Heart attack never
-                                stopped old Big Bear.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div className="text-center">
-                    <a
-                        href="/"
-                        className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-                    >
-                        Learn more
-                    </a>
-                </div>
-            </div>
-            <div className="bg-gray-900 py-24 sm:py-32">
+                    <defs>
+                        <pattern
+                            x="50%"
+                            y={-1}
+                            id="983e3e4c-de6d-4c3f-8d64-b9761d1534cc"
+                            width={200}
+                            height={200}
+                            patternUnits="userSpaceOnUse"
+                        >
+                            <path d="M.5 200V.5H200" fill="none"/>
+                        </pattern>
+                    </defs>
+                    <svg x="50%" y={-1} className="overflow-visible fill-gray-800/20">
+                        <path
+                            d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z"
+                            strokeWidth={0}
+                        />
+                    </svg>
+                    <rect fill="url(#983e3e4c-de6d-4c3f-8d64-b9761d1534cc)" width="100%" height="100%" strokeWidth={0}/>
+                </svg>
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
-                        <p className="text-base font-semibold leading-7 text-indigo-400">Deploy faster</p>
-                        <h1 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">A better
-                            workflow</h1>
+                        <h2
+                            className="col-start-1 row-start-1 h-7 text-base font-semibold leading-7 text-em-pink mb-4"
+                            aria-hidden="true">Our Methodology
+                        </h2>
+                        <div className="mb-4 text-4xl font-extrabold tracking-tight text-white">
+                            E-commerce Development Process
+                        </div>
+                        <p className="mt-6 text-lg leading-8 text-white">
+                            Our structured process ensures that every aspect of your e-commerce development is meticulously planned and executed, resulting in an online store that aligns with your business goals.
+                        </p>
                         <div
                             className="mt-10 grid max-w-xl grid-cols-1 gap-8 text-base leading-7 text-gray-300 lg:max-w-none lg:grid-cols-2">
                             <div>
                                 <p>
-                                    Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis
-                                    mauris semper sed amet
-                                    vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra
-                                    tellus varius sit neque
-                                    erat velit. Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim.
-                                    Mattis mauris
-                                    semper sed amet vitae sed turpis id.
+                                    Our process begins with a thorough consultation to understand your business requirements and goals. We take the time to learn about your brand, your target audience, and your specific needs, ensuring that the final product aligns perfectly with your vision.
                                 </p>
                                 <p className="mt-8">
-                                    Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id
-                                    blandit molestie auctor
-                                    fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate
-                                    et ultrices hac
-                                    adipiscing egestas.
+                                    We then move on to the design and development phase, where our team creates a custom design and develops your e-commerce website, focusing on aesthetics, functionality, and user experience. We ensure that your online store is visually appealing and easy to navigate.
                                 </p>
                             </div>
                             <div>
                                 <p>
-                                    Erat pellentesque dictumst ligula porttitor risus eget et eget. Ultricies tellus
-                                    felis id dignissim
-                                    eget. Est augue maecenas risus nulla ultrices congue nunc tortor. Enim et nesciunt
-                                    doloremque nesciunt
-                                    voluptate.
+                                    Next, we conduct rigorous testing to ensure your website is fully functional and error-free before launching it to the public. Our testing process includes checking for compatibility across different devices and browsers, as well as ensuring that all features and functionalities are working as intended.
                                 </p>
                                 <p className="mt-8">
-                                    Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id
-                                    blandit molestie auctor
-                                    fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate
-                                    et ultrices hac
-                                    adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.
+                                    Finally, we deploy your online store and provide ongoing support to ensure it operates smoothly and effectively. Our commitment to excellence extends beyond the initial development phase, as we provide continuous maintenance and updates to keep your online store performing at its best.
                                 </p>
                             </div>
                         </div>
@@ -372,11 +281,32 @@ export default function EcommerceDevelopment() {
                     </div>
                 </div>
             </div>
-            <div className="bg-white">
+            <div className="bg-white relative isolate">
+                <div
+                    aria-hidden="true"
+                    className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+                >
+                    <div
+                        style={{
+                            clipPath:
+                                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+                        }}
+                        className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+                    />
+                </div>
                 <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
                     <div className="mx-auto max-w-4xl divide-y divide-gray-900/10">
-                        <h2 className="text-2xl font-bold leading-10 tracking-tight text-gray-900">Frequently asked
-                            questions</h2>
+                        <h2
+                            className="col-start-1 row-start-1 h-7 text-base font-semibold leading-7 text-em-pink mb-4"
+                            aria-hidden="true">Have Questions?
+                        </h2>
+                        <div className="mb-4 text-4xl font-extrabold tracking-tight text-slate-900">
+                            Frequently Asked Questions Section
+                        </div>
+                        <p className="mt-6 text-lg leading-8 text-gray-600">
+                            Find answers to common questions about our e-commerce development services. If you need more
+                            information, feel free to contact us.
+                        </p>
                         <dl className="mt-10 space-y-6 divide-y divide-gray-900/10">
                             {faqs.map((faq) => (
                                 <Disclosure as="div" key={faq.question} className="pt-6">
@@ -406,38 +336,44 @@ export default function EcommerceDevelopment() {
                         </dl>
                     </div>
                 </div>
+                <div
+                    aria-hidden="true"
+                    className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+                >
+                    <div
+                        style={{
+                            clipPath:
+                                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+                        }}
+                        className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+                    />
+                </div>
             </div>
             <section className="py-14">
                 <div className="max-w-screen-xl mx-auto md:px-8">
                     <div className="items-center gap-x-12 sm:px-4 md:px-0 lg:flex">
                         <div className="flex-1 sm:hidden lg:block">
                             <img
-                                src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-                                className="md:max-w-lg sm:rounded-lg" alt=""/>
+                                src="/images/ecom-img-2.png"
+                                className="md:max-w-lg rounded-xl bg-gray-900/5 object-cover shadow-lg" alt="Young African American programmer working at office."/>
                         </div>
                         <div className="max-w-xl px-4 space-y-3 mt-6 sm:px-0 md:mt-0 lg:max-w-2xl">
-                            <h3 className="text-indigo-600 font-semibold">
-                                Professional services
-                            </h3>
-                            <p className="text-gray-800 text-3xl font-semibold sm:text-4xl">
-                                Build your SaaS solution with help from our experts
+                            <h2
+                                className="col-start-1 row-start-1 h-7 text-base font-semibold leading-7 text-em-pink mb-4"
+                                aria-hidden="true">Innovating for a Better Future
+                            </h2>
+                            <div className="mb-4 text-4xl font-extrabold tracking-tight text-slate-900">
+                                Ready to Launch Your Online Store?
+                            </div>
+                            <p className="mt-6 text-lg leading-8 text-gray-600">
+                                Partner with Empuls3 for comprehensive e-commerce development solutions that drive sales and enhance customer engagement. Contact us to discuss your project requirements and get starte    d today.
                             </p>
-                            <p className="mt-3 text-gray-600">
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                officia deserunt mollit anim id est laborum, sed ut perspiciatis unde omnis iste natus
-                                error sit voluptatem accusantium doloremque laudantium
-                            </p>
-                            <a href="javascript:void(0)"
-                               className="inline-flex gap-x-1 items-center text-indigo-600 hover:text-indigo-500 duration-150 font-medium">
-                                Learn more
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                     className="w-5 h-5">
-                                    <path fillRule="evenodd"
-                                          d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
-                                          clipRule="evenodd"/>
-                                </svg>
-                            </a>
+                           <div className="pt-8">
+                            <Link href="/contact"
+                                  className="relative h-12 overflow-hidden rounded bg-em-pink px-5 py-2.5 font-semibold text-white transition-all duration-300 hover:bg-em-purple hover:ring-2 hover:ring-em-pink hover:ring-offset-2">
+                                <span className="relative">Ready To Get Started?</span>
+                            </Link>
+                           </div>
                         </div>
                     </div>
                 </div>
