@@ -1,11 +1,5 @@
 import MarcomLayout from '@/Layouts/MarcomLayout';
 import {Head} from "@inertiajs/react";
-import {
-    ChatBubbleOvalLeftEllipsisIcon,
-    HeartIcon, LifebuoyIcon,
-    PencilSquareIcon,
-    TrashIcon
-} from '@heroicons/react/20/solid'
 import ClientLogos from "@/Components/ClientLogos.jsx";
 import {
     BeakerIcon,
@@ -94,18 +88,6 @@ const solutionscta = [
     },
 ]
 
-const testimonials = [
-    {
-        body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
-        author: {
-            name: 'Leslie Alexander',
-            handle: 'lesliealexander',
-            imageUrl:
-                'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-        },
-    },
-    // More testimonials...
-]
 
 export default function About() {
     return (
