@@ -1,160 +1,229 @@
 import Marcom from "@/Layouts/MarcomLayout.jsx";
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
 import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline'
+import {ChevronRightIcon} from "@heroicons/react/20/solid";
+import ClientLogos from "@/Components/ClientLogos.jsx";
+import {Link} from "@inertiajs/react";
 
 const faqs = [
     {
-        question: "What's the best thing about Switzerland?",
+        question: "What is React Native?",
         answer:
-            "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+            "React Native is a framework for building mobile applications using JavaScript and React, allowing for cross-platform compatibility.",
     },
-    // More questions...
+    {
+        question: "How long does it take to develop a React Native app?",
+        answer:
+            "The timeline varies based on the project’s complexity, but we aim to deliver within a few weeks to a couple of months.",
+    },
+    {
+        question: "Can you convert my existing app to React Native?",
+        answer:
+            "Yes, we can convert your existing app to React Native, enhancing its performance and user experience.\n",
+    },
+    {
+        question: "Do you offer ongoing support for React Native apps?",
+        answer:
+            "Absolutely, we provide continuous support and maintenance to ensure your app remains up-to-date and running smoothly.",
+    },
+    {
+        question: "Is React Native suitable for large-scale apps?",
+        answer:
+            "Yes, React Native is scalable and suitable for developing large-scale applications with high performance.",
+    },
+    {
+        question: "Can you integrate third-party services with React Native?",
+        answer:
+            "Yes, we can integrate various third-party services and APIs to enhance the functionality of your React Native app.",
+    },
 ]
 
 export default function ReactNativeDev() {
     return (
         <Marcom>
             <div className="bg-white">
+                <div className="relative isolate pt-14">
+                    <svg
+                        aria-hidden="true"
+                        className="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+                    >
+                        <defs>
+                            <pattern
+                                x="50%"
+                                y={-1}
+                                id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527"
+                                width={200}
+                                height={200}
+                                patternUnits="userSpaceOnUse"
+                            >
+                                <path d="M100 200V.5M.5 .5H200" fill="none"/>
+                            </pattern>
+                        </defs>
+                        <svg x="50%" y={-1} className="overflow-visible fill-gray-50">
+                            <path
+                                d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
+                                strokeWidth={0}
+                            />
+                        </svg>
+                        <rect fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" width="100%" height="100%"
+                              strokeWidth={0}/>
+                    </svg>
+                    <div
+                        className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-40">
+                        <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
 
-                <div className="bg-[#FCF8F1] bg-opacity-30 py-10 sm:py-16 lg:py-24">
-                    <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-                        <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
-                            <div>
-                                <p className="text-base font-semibold tracking-wider text-blue-600 uppercase">A social
-                                    media for learners</p>
-                                <h1 className="mt-4 text-4xl font-bold text-black lg:mt-8 sm:text-6xl xl:text-8xl">Connect
-                                    & learn from the experts</h1>
-                                <p className="mt-4 text-base text-black lg:mt-8 sm:text-xl">Grow your career fast with
-                                    right mentor.</p>
-
-                                <a href="#" title=""
-                                   className="inline-flex items-center px-6 py-4 mt-8 font-semibold text-black transition-all duration-200 bg-yellow-300 rounded-full lg:mt-16 hover:bg-yellow-400 focus:bg-yellow-400"
-                                   role="button">
-                                    Join for free
-                                    <svg className="w-6 h-6 ml-8 -mr-2" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                         viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"
-                                              d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                                    </svg>
-                                </a>
-
-                                <p className="mt-5 text-gray-600">Already joined us? <a href="#" title=""
-                                                                                        className="text-black transition-all duration-200 hover:underline">Log
-                                    in</a></p>
+                            <h1
+                                className="col-start-1 row-start-1 h-7 text-base font-semibold leading-7 text-em-pink"
+                                aria-hidden="true">Seamless Cross-Platform Apps
+                            </h1>
+                            <div
+                                className="mt-4 max-w-[36rem] text-4xl font-extrabold tracking-tight text-slate-900 sm:text-7xl xl:max-w-[43.5rem]">
+                                React Native Development Solutions
                             </div>
-
-                            <div>
-                                <img className="w-full"
-                                     src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/1/hero-img.png"
-                                     alt=""/>
-                            </div>
+                            <p className="mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
+                                Empuls3 offers expert React Native development solutions to create high-performance, cross-platform mobile apps. Our team leverages React Native to build applications that deliver native-like experiences on both iOS and Android.
+                            </p>
+                        </div>
+                        <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
+                            <svg role="img" viewBox="0 0 366 729"
+                                 className="mx-auto w-[22.875rem] max-w-full drop-shadow-xl">
+                                <title>App screenshot</title>
+                                <defs>
+                                    <clipPath id="2ade4387-9c63-4fc4-b754-10e687a0d332">
+                                        <rect rx={36} width={316} height={684}/>
+                                    </clipPath>
+                                </defs>
+                                <path
+                                    d="M363.315 64.213C363.315 22.99 341.312 1 300.092 1H66.751C25.53 1 3.528 22.99 3.528 64.213v44.68l-.857.143A2 2 0 0 0 1 111.009v24.611a2 2 0 0 0 1.671 1.973l.95.158a2.26 2.26 0 0 1-.093.236v26.173c.212.1.398.296.541.643l-1.398.233A2 2 0 0 0 1 167.009v47.611a2 2 0 0 0 1.671 1.973l1.368.228c-.139.319-.314.533-.511.653v16.637c.221.104.414.313.56.689l-1.417.236A2 2 0 0 0 1 237.009v47.611a2 2 0 0 0 1.671 1.973l1.347.225c-.135.294-.302.493-.49.607v377.681c0 41.213 22 63.208 63.223 63.208h95.074c.947-.504 2.717-.843 4.745-.843l.141.001h.194l.086-.001 33.704.005c1.849.043 3.442.37 4.323.838h95.074c41.222 0 63.223-21.999 63.223-63.212v-394.63c-.259-.275-.48-.796-.63-1.47l-.011-.133 1.655-.276A2 2 0 0 0 366 266.62v-77.611a2 2 0 0 0-1.671-1.973l-1.712-.285c.148-.839.396-1.491.698-1.811V64.213Z"
+                                    fill="#4B5563"
+                                />
+                                <path
+                                    d="M16 59c0-23.748 19.252-43 43-43h246c23.748 0 43 19.252 43 43v615c0 23.196-18.804 42-42 42H58c-23.196 0-42-18.804-42-42V59Z"
+                                    fill="#343E4E"
+                                />
+                                <foreignObject
+                                    width={316}
+                                    height={684}
+                                    clipPath="url(#2ade4387-9c63-4fc4-b754-10e687a0d332)"
+                                    transform="translate(24 24)"
+                                >
+                                    <img alt=""
+                                         src="https://tailwindui.com/img/component-images/mobile-app-screenshot.png"/>
+                                </foreignObject>
+                            </svg>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="py-10 bg-gray-50 sm:py-16 lg:py-24">
+            <div className="py-10 bg-em-purple sm:py-16 lg:py-24 relative isolate overflow-hidden">
+                <svg
+                    aria-hidden="true"
+                    className="absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_center,white,transparent)]"
+                >
+                    <defs>
+                        <pattern
+                            x="50%"
+                            y={-1}
+                            id="983e3e4c-de6d-4c3f-8d64-b9761d1534cc"
+                            width={200}
+                            height={200}
+                            patternUnits="userSpaceOnUse"
+                        >
+                            <path d="M.5 200V.5H200" fill="none"/>
+                        </pattern>
+                    </defs>
+                    <svg x="50%" y={-1} className="overflow-visible fill-gray-800/20">
+                        <path
+                            d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z"
+                            strokeWidth={0}
+                        />
+                    </svg>
+                    <rect fill="url(#983e3e4c-de6d-4c3f-8d64-b9761d1534cc)" width="100%" height="100%" strokeWidth={0}/>
+                </svg>
                 <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-                    <div className="max-w-xl mx-auto text-center">
-                        <div
-                            className="inline-flex px-4 py-1.5 mx-auto rounded-full bg-gradient-to-r from-fuchsia-600 to-blue-600">
-                            <p className="text-xs font-semibold tracking-widest text-white uppercase">130+ Handcoded
-                                Blocks</p>
+                    <div className="max-w mx-auto text-center">
+
+                        <h2
+                            className="col-start-1 row-start-1 h-7 text-base font-semibold leading-7 text-em-pink mb-4"
+                            aria-hidden="true">Efficient and Robust
+                        </h2>
+                        <div className="mb-4 text-4xl font-extrabold tracking-tight text-white">
+                            About Our React Native Development Solutions
                         </div>
-                        <h2 className="mt-6 text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">Celebration
-                            helps you build beautiful website</h2>
-                        <p className="mt-4 text-base leading-relaxed text-gray-600">Amet minim mollit non deserunt
-                            ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
-                            mollit.</p>
+                        <p className="mt-6 text-lg leading-8 text-white">
+                            At Empuls3, we specialize in React Native development to build versatile and robust mobile
+                            applications. Our solutions ensure efficient performance and a seamless user experience
+                            across multiple platforms. We focus on leveraging the capabilities of React Native to
+                            deliver apps that are scalable, maintainable, and cost-effective.
+                        </p>
                     </div>
 
                     <div className="grid grid-cols-1 gap-5 mt-12 sm:grid-cols-3 lg:mt-20 lg:gap-x-12">
-                        <div className="transition-all duration-200 bg-white hover:shadow-xl">
+                        <div className="transition-all duration-200 bg-white hover:shadow-xl rounded-xl">
                             <div className="py-10 px-9">
-                                <svg className="w-16 h-16 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                     viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1"
-                                          d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                     strokeWidth="1.5" stroke="currentColor" className="w-8 h-8 text-em-pink">
+                                    <path strokeLinecap="round" strokeLinejoin="round"
+                                          d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5"/>
                                 </svg>
-                                <h3 className="mt-8 text-lg font-semibold text-black">Secured Payments</h3>
-                                <p className="mt-4 text-base text-gray-600">Amet minim mollit non deserunt ullamco est
-                                    sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+
+                                <h3 className="mt-8 text-lg font-semibold text-black">Cross-Platform Compatibility</h3>
+                                <p className="mt-4 text-base text-gray-600">Our React Native apps run smoothly on both
+                                    iOS and Android, providing a consistent user experience across devices.</p>
                             </div>
                         </div>
 
-                        <div className="transition-all duration-200 bg-white hover:shadow-xl">
+                        <div className="transition-all duration-200 bg-white hover:shadow-xl rounded-xl">
                             <div className="py-10 px-9">
-                                <svg className="w-16 h-16 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                     viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1"
-                                          d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"/>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                     strokeWidth="1.5" stroke="currentColor" className="w-8 h-8 text-em-pink">
+                                    <path strokeLinecap="round" strokeLinejoin="round"
+                                          d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 0 0-3.7-3.7 48.678 48.678 0 0 0-7.324 0 4.006 4.006 0 0 0-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 0 0 3.7 3.7 48.656 48.656 0 0 0 7.324 0 4.006 4.006 0 0 0 3.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3-3 3"/>
                                 </svg>
-                                <h3 className="mt-8 text-lg font-semibold text-black">Secured Payments</h3>
-                                <p className="mt-4 text-base text-gray-600">Amet minim mollit non deserunt ullamco est
-                                    sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+
+                                <h3 className="mt-8 text-lg font-semibold text-black">Fast Development Cycle</h3>
+                                <p className="mt-4 text-base text-gray-600">React Native allows for faster development
+                                    cycles, reducing time-to-market without compromising on quality.
+                                </p>
                             </div>
                         </div>
 
-                        <div className="transition-all duration-200 bg-white hover:shadow-xl">
+                        <div className="transition-all duration-200 bg-white hover:shadow-xl rounded-xl">
                             <div className="py-10 px-9">
-                                <svg className="w-16 h-16 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                     viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1"
-                                          d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                     strokeWidth="1.5" stroke="currentColor" className="w-8 h-8 text-em-pink">
+                                    <path strokeLinecap="round" strokeLinejoin="round"
+                                          d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z"/>
                                 </svg>
-                                <h3 className="mt-8 text-lg font-semibold text-black">Secured Payments</h3>
-                                <p className="mt-4 text-base text-gray-600">Amet minim mollit non deserunt ullamco est
-                                    sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+
+                                <h3 className="mt-8 text-lg font-semibold text-black">Native-Like Performance</h3>
+                                <p className="mt-4 text-base text-gray-600">We deliver apps that offer native-like
+                                    performance and functionality, ensuring high user satisfaction.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="bg-gray-900 py-24 sm:py-32">
-                <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                    <h2 className="text-center text-lg font-semibold leading-8 text-white">
-                        Trusted by the world’s most innovative teams
-                    </h2>
-                    <div
-                        className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-                        <img
-                            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                            src="https://tailwindui.com/img/logos/158x48/transistor-logo-white.svg"
-                            alt="Transistor"
-                            width={158}
-                            height={48}
-                        />
-                        <img
-                            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                            src="https://tailwindui.com/img/logos/158x48/reform-logo-white.svg"
-                            alt="Reform"
-                            width={158}
-                            height={48}
-                        />
-                        <img
-                            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                            src="https://tailwindui.com/img/logos/158x48/tuple-logo-white.svg"
-                            alt="Tuple"
-                            width={158}
-                            height={48}
-                        />
-                        <img
-                            className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-                            src="https://tailwindui.com/img/logos/158x48/savvycal-logo-white.svg"
-                            alt="SavvyCal"
-                            width={158}
-                            height={48}
-                        />
-                        <img
-                            className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-                            src="https://tailwindui.com/img/logos/158x48/statamic-logo-white.svg"
-                            alt="Statamic"
-                            width={158}
-                            height={48}
-                        />
-                    </div>
-                </div>
-            </div>
-            <div className="py-10 bg-white sm:py-16 lg:py-24">
+            <ClientLogos/>
+            <div className="py-10 bg-white sm:py-16 lg:py-24 relative isolate overflow-hidden">
+                <svg
+                    aria-hidden="true"
+                    className="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_left_center,white,transparent)]"
+                >
+                    <defs>
+                        <pattern
+                            x="50%"
+                            y={-1}
+                            id="0787a7c5-978c-4f66-83c7-11c213f99cb7"
+                            width={200}
+                            height={200}
+                            patternUnits="userSpaceOnUse"
+                        >
+                            <path d="M.5 200V.5H200" fill="none"/>
+                        </pattern>
+                    </defs>
+                    <rect fill="url(#0787a7c5-978c-4f66-83c7-11c213f99cb7)" width="100%" height="100%" strokeWidth={0}/>
+                </svg>
                 <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
                     <div className="grid items-center md:grid-cols-2 gap-y-10 md:gap-x-20">
                         <div className="pr-12 sm:pr-0">
@@ -170,11 +239,41 @@ export default function ReactNativeDev() {
                         </div>
 
                         <div>
-                            <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">Grow
-                                business with Celebration.</h2>
-                            <p className="mt-4 text-base leading-relaxed text-gray-600">Amet minim mollit non deserunt
-                                ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
-                                mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            <h2
+                                className="col-start-1 row-start-1 h-7 text-base font-semibold leading-7 text-em-pink mb-4"
+                                aria-hidden="true">The Empuls3 Advantage
+                            </h2>
+                            <div className="mb-4 text-4xl font-extrabold tracking-tight text-slate-900">
+                                Why Choose Our React Native Development Solutions
+                            </div>
+                            <p className="mt-6 text-lg leading-8 text-gray-600">
+                                At Empuls3, we believe in the power of technology to transform businesses. Our dedicated
+                                team works tirelessly to deliver solutions that not only meet but exceed client
+                                expectations. We are committed to innovation, quality, and client satisfaction.
+                            </p>
+
+                            <h3 className="my-4 text-2xl font-extrabold tracking-tight text-slate-900">
+                                Expert Team
+                            </h3>
+                            <p className="mt-6 text-lg leading-8 text-gray-600">
+                                Our experienced developers have extensive knowledge in React Native, delivering
+                                high-quality mobile applications tailored to your needs.
+                            </p>
+                            <h3 className="my-4 text-2xl font-extrabold tracking-tight text-slate-900">
+                                Cost-Effective Solutions
+                            </h3>
+                            <p className="mt-6 text-lg leading-8 text-gray-600">
+                                React Native's code reuse reduces development costs while maintaining high standards of
+                                quality and performance.
+                            </p>
+
+                            <h3 className="my-4 text-2xl font-extrabold tracking-tight text-slate-900">
+                                Continuous Support
+                            </h3>
+                            <p className="mt-6 text-lg leading-8 text-gray-600">
+                                We provide ongoing support and maintenance to ensure your app remains up-to-date and
+                                performs optimally.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -182,213 +281,36 @@ export default function ReactNativeDev() {
             <div>
                 <div
                     className="flex flex-col px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 lg:flex-row">
-                    <div className="mb-5 lg:w-1/3 lg:mb-0 lg:mr-20">
-                        <h2 className="relative mb-4 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-            <span className="relative inline-block">
-              <svg
-                  viewBox="0 0 52 24"
-                  fill="currentColor"
-                  className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
-              >
-                <defs>
-                  <pattern
-                      id="6bfa0e57-faa2-4bb2-ac0e-310782e5eb2d"
-                      x="0"
-                      y="0"
-                      width=".135"
-                      height=".30"
-                  >
-                    <circle cx="1" cy="1" r=".7"/>
-                  </pattern>
-                </defs>
-                <rect
-                    fill="url(#6bfa0e57-faa2-4bb2-ac0e-310782e5eb2d)"
-                    width="52"
-                    height="24"
-                />
-              </svg>
-              <span className="relative">The</span>
-            </span>{' '}
-                            brown fox
+                    <div className="mb-5 lg:w-4/3 lg:mb-0 lg:mr-20">
+
+                        <h2
+                            className="col-start-1 row-start-1 h-7 text-base font-semibold leading-7 text-em-pink mb-4"
+                            aria-hidden="true">Tailored to Your Needs
                         </h2>
-                        <p className="mb-4 text-gray-900 lg:mb-6">
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                            laudantium, totam rem aperiam, eaque ipsa quae explicabo.
+                        <div className="mb-4 text-4xl font-extrabold tracking-tight text-slate-900">
+                            How Empuls3 Can Help
+                        </div>
+                        <p className="mt-6 text-lg leading-8 text-gray-600">
+                            At Empuls3, we believe in the power of technology to transform businesses. Our dedicated
+                            team works tirelessly to deliver solutions that not only meet but exceed client
+                            expectations. We are committed to innovation, quality, and client satisfaction.
                         </p>
-                        <a
-                            href="/"
-                            aria-label=""
-                            className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-                        >
-                            Learn more
-                            <svg
-                                className="inline-block w-3 ml-2"
-                                fill="currentColor"
-                                viewBox="0 0 12 12"
-                            >
-                                <path
-                                    d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z"/>
-                            </svg>
-                        </a>
+                        <p className="mt-6 text-lg leading-8 text-gray-600">
+                            Our team of skilled developers and designers works collaboratively to create React Native
+                            apps that are not only functional but also visually appealing and engaging. We prioritize
+                            user experience and design interfaces that resonate with your target audience, ensuring that
+                            your app makes a strong impression from the start.
+                        </p>
+
+                        <p className="mt-6 text-lg leading-8 text-gray-600">
+                            With Empuls3, you get a partner committed to your success. We provide continuous support and guidance throughout the development process and beyond, ensuring that your app evolves and grows with your business. Choose Empuls3 for a seamless and efficient React Native development experience.
+                        </p>
                     </div>
                     <div className="flex-grow pt-1">
                         <div className="flex items-center mb-3">
-            <span className="font-bold tracking-wide text-gray-900">
-              Categories
-            </span>
-                            <span className="ml-1">
-              <svg
-                  className="w-5 h-5 mt-px text-deep-purple-accent-400"
-                  stroke="currentColor"
-                  viewBox="0 0 52 52"
-              >
-                <polygon
-                    strokeWidth="4"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
-                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                />
-              </svg>
-            </span>
+
                         </div>
                         <div className="grid grid-cols-2 row-gap-6 sm:grid-cols-4">
-                            <ul className="space-y-2">
-                                <li>
-                                    <a
-                                        href="/"
-                                        className="transition-colors duration-300 hover:text-deep-purple-accent-700"
-                                    >
-                                        Computers
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="/"
-                                        className="transition-colors duration-300 hover:text-deep-purple-accent-700"
-                                    >
-                                        Health
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="/"
-                                        className="transition-colors duration-300 hover:text-deep-purple-accent-700"
-                                    >
-                                        Reference
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="/"
-                                        className="transition-colors duration-300 hover:text-deep-purple-accent-700"
-                                    >
-                                        World
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul className="space-y-2">
-                                <li>
-                                    <a
-                                        href="/"
-                                        className="transition-colors duration-300 hover:text-deep-purple-accent-700"
-                                    >
-                                        eCommerce
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="/"
-                                        className="transition-colors duration-300 hover:text-deep-purple-accent-700"
-                                    >
-                                        Business
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="/"
-                                        className="transition-colors duration-300 hover:text-deep-purple-accent-700"
-                                    >
-                                        Portfolio
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="/"
-                                        className="transition-colors duration-300 hover:text-deep-purple-accent-700"
-                                    >
-                                        Video
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul className="space-y-2">
-                                <li>
-                                    <a
-                                        href="/"
-                                        className="transition-colors duration-300 hover:text-deep-purple-accent-700"
-                                    >
-                                        Brochure
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="/"
-                                        className="transition-colors duration-300 hover:text-deep-purple-accent-700"
-                                    >
-                                        Nonprofit
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="/"
-                                        className="transition-colors duration-300 hover:text-deep-purple-accent-700"
-                                    >
-                                        Educational
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="/"
-                                        className="transition-colors duration-300 hover:text-deep-purple-accent-700"
-                                    >
-                                        Sports
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul className="space-y-2">
-                                <li>
-                                    <a
-                                        href="/"
-                                        className="transition-colors duration-300 hover:text-deep-purple-accent-700"
-                                    >
-                                        Infopreneur
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="/"
-                                        className="transition-colors duration-300 hover:text-deep-purple-accent-700"
-                                    >
-                                        Health
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="/"
-                                        className="transition-colors duration-300 hover:text-deep-purple-accent-700"
-                                    >
-                                        Web
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="/"
-                                        className="transition-colors duration-300 hover:text-deep-purple-accent-700"
-                                    >
-                                        Personal
-                                    </a>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                 </div>
@@ -401,11 +323,12 @@ export default function ReactNativeDev() {
                     <div className="absolute inset-0 bg-gray-900 bg-opacity-50"/>
                 </div>
             </div>
-            <div className="bg-gray-900">
+            <div className="bg-em-pink relative isolate overflow-hidden">
                 <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
                     <div className="mx-auto max-w-4xl divide-y divide-white/10">
-                        <h2 className="text-2xl font-bold leading-10 tracking-tight text-white">Frequently asked
-                            questions</h2>
+                        <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-white">
+                            Our Commitment to Excellence
+                        </h2>
                         <dl className="mt-10 space-y-6 divide-y divide-white/10">
                             {faqs.map((faq) => (
                                 <Disclosure as="div" key={faq.question} className="pt-6">
@@ -438,8 +361,8 @@ export default function ReactNativeDev() {
             </div>
             <div className="bg-white">
                 <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
-                    <div
-                        className="relative isolate overflow-hidden bg-gray-900 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+                <div
+                        className="relative isolate overflow-hidden bg-em-purple px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
                         <svg
                             viewBox="0 0 1024 1024"
                             className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
@@ -449,43 +372,45 @@ export default function ReactNativeDev() {
                                     fillOpacity="0.7"/>
                             <defs>
                                 <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
-                                    <stop stopColor="#7775D6"/>
-                                    <stop offset={1} stopColor="#E935C1"/>
+                                    <stop stopColor="#BD1550"/>
+                                    <stop offset={1} stopColor="#BD1550"/>
                                 </radialGradient>
                             </defs>
                         </svg>
-                        <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
-                            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                                Boost your productivity.
-                                <br/>
-                                Start using our app today.
-                            </h2>
-                            <p className="mt-6 text-lg leading-8 text-gray-300">
-                                Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing
-                                sagittis vel nulla.
-                            </p>
-                            <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
-                                <a
-                                    href="#"
-                                    className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                                >
-                                    Get started
-                                </a>
-                                <a href="#" className="text-sm font-semibold leading-6 text-white">
-                                    Learn more <span aria-hidden="true">→</span>
-                                </a>
-                            </div>
+                    <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
+                        <h2
+                            className="col-start-1 row-start-1 h-7 text-base font-semibold leading-7 text-em-yellow mb-4"
+                            aria-hidden="true">Innovating for a Better Future
+                        </h2>
+                        <div className="mb-4 text-4xl font-extrabold tracking-tight text-white">
+                            Our Commitment to Excellence
                         </div>
-                        <div className="relative mt-16 h-80 lg:mt-8">
-                            <img
-                                className="absolute left-0 top-0 w-[57rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
-                                src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
-                                alt="App screenshot"
-                                width={1824}
-                                height={1080}
-                            />
+                        <p className="mt-6 text-lg leading-8 text-white">
+                            At Empuls3, we believe in the power of technology to transform businesses. Our dedicated
+                            team works tirelessly to deliver solutions that not only meet but exceed client
+                            expectations. We are committed to innovation, quality, and client satisfaction.
+                        </p>
+                        <div className="mt-10 flex items-center gap-x-6">
+                            <Link href="/contact"
+                                  className="relative h-12 overflow-hidden rounded bg-em-pink px-5 py-2.5 font-semibold text-white transition-all duration-300 hover:bg-em-purple hover:ring-2 hover:ring-em-pink hover:ring-offset-2">
+                                <span className="relative">Ready To Get Started?</span>
+                            </Link>
+                            <Link href="/frequently-asked-questions"
+                                  className="font-semibold leading-6 text-white hover:text-em-pink">
+                                Have More Questions?<span aria-hidden="true">→</span>
+                            </Link>
                         </div>
                     </div>
+                    <div className="relative mt-16 h-80 lg:mt-8">
+                        <img
+                            className="absolute left-0 top-0 w-[57rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
+                            src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
+                            alt="App screenshot"
+                            width={1824}
+                            height={1080}
+                        />
+                    </div>
+                </div>
                 </div>
             </div>
         </Marcom>
