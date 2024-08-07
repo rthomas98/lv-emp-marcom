@@ -104,15 +104,7 @@ export default function ProgressiveWebDevelopment() {
                     </svg>
                     <rect fill="url(#983e3e4c-de6d-4c3f-8d64-b9761d1534cc)" width="100%" height="100%" strokeWidth={0}/>
                 </svg>
-                <div className="relative lg:min-h-[1000px] pt-24 pb-10 sm:pt-32 sm:pb-16 lg:pb-24">
-                    <div className="absolute inset-x-0 bottom-0 hidden lg:flex">
-                        <img className="hidden w-full lg:block"
-                             src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/5/credit-cards.png"
-                             alt=""/>
-                        <img className="block w-full lg:hidden"
-                             src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/5/credit-cards-mobile.png"
-                             alt=""/>
-                    </div>
+                <div className="relative lg:min-h-[600px] pt-24 pb-10 sm:pt-32 sm:pb-16 lg:pb-24">
 
                     <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 relative">
                         <div className="max-w-xl mx-auto text-center">
@@ -222,7 +214,7 @@ export default function ProgressiveWebDevelopment() {
                     <div className="grid grid-cols-1 mt-12 lg:mt-24 gap-y-12 md:grid-cols-3 gap-x-6">
                         <div className="md:px-4 lg:px-10">
                             <img className="-rotate-1 rounded-xl w-full mx-auto shadow-xl ring-1 ring-gray-400/10"
-                                 src="https://cdn.rareblocks.xyz/collection/celebration/images/steps/3/team.jpg"
+                                 src="../images/pwm-long-img-1.png"
                                  alt=""/>
                             <h3 className="mt-8 text-xl font-semibold leading-tight text-black">Expertise in PWA
                                 Development</h3>
@@ -232,7 +224,7 @@ export default function ProgressiveWebDevelopment() {
 
                         <div className="md:px-4 lg:px-10">
                             <img className="rotate-1 rounded-xl w-full mx-auto shadow-xl ring-1 ring-gray-400/10"
-                                 src="https://cdn.rareblocks.xyz/collection/celebration/images/steps/3/work.jpg"
+                                 src="../images/pwm-long-img-2.png"
                                  alt=""/>
                             <h3 className="mt-8 text-xl font-semibold leading-tight text-black">Innovative Features</h3>
                             <p className="mt-4 text-base text-gray-600">We incorporate the latest features and
@@ -241,7 +233,7 @@ export default function ProgressiveWebDevelopment() {
 
                         <div className="md:px-4 lg:px-10">
                             <img className="-rotate-1 rounded-xl w-full mx-auto shadow-xl ring-1 ring-gray-400/10"
-                                 src="https://cdn.rareblocks.xyz/collection/celebration/images/steps/3/success.jpg"
+                                 src="../images/pwm-long-img-3.png"
                                  alt=""/>
                             <h3 className="mt-8 text-xl font-semibold leading-tight text-black">Client-Centric
                                 Approach</h3>
@@ -440,7 +432,7 @@ export default function ProgressiveWebDevelopment() {
                     <div className="relative">
                         <img
                             className="inset-0 object-cover object-bottom w-full rounded shadow-lg h-96 lg:absolute lg:h-full"
-                            src="https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                            src="../images/pwm-long-img-4.png"
                             alt=""
                         />
                     </div>
@@ -596,20 +588,20 @@ export default function ProgressiveWebDevelopment() {
                         <div className="flex items-center justify-center">
                             <div className="w-20 h-20 -mr-6 overflow-hidden bg-gray-300 rounded-full">
                                 <img className="object-cover w-full h-full"
-                                     src="https://cdn.rareblocks.xyz/collection/celebration/images/cta/2/female-avatar-1.jpg"
+                                     src="../images/pwa-img-1.png"
                                      alt=""/>
                             </div>
 
                             <div
                                 className="relative overflow-hidden bg-gray-300 border-8 border-white rounded-full w-28 h-28">
                                 <img className="object-cover w-full h-full"
-                                     src="https://cdn.rareblocks.xyz/collection/celebration/images/cta/2/male-avatar-1.jpg"
+                                     src="../images/pwa-img-2.png"
                                      alt=""/>
                             </div>
 
                             <div className="w-20 h-20 -ml-6 overflow-hidden bg-gray-300 rounded-full">
                                 <img className="object-cover w-full h-full"
-                                     src="https://cdn.rareblocks.xyz/collection/celebration/images/cta/2/female-avatar-2.jpg"
+                                     src="../images/pwa-img-3.png"
                                      alt=""/>
                             </div>
                         </div>
