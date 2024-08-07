@@ -7,6 +7,7 @@ import {
     PlusSmallIcon
 } from "@heroicons/react/24/outline";
 import {Disclosure, DisclosureButton, DisclosurePanel} from "@headlessui/react";
+import {Link} from "@inertiajs/react";
 
 const features = [
     {
@@ -36,11 +37,35 @@ const stats = [
 
 const faqs = [
     {
-        question: "What's the best thing about Switzerland?",
+        question: "What is custom software development?",
         answer:
-            "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+            "Custom software development involves creating software solutions tailored to the specific needs and requirements of a business.",
     },
-    // More questions...
+    {
+        question: "How long does it take to develop custom software?",
+        answer:
+            "The timeline varies based on the project’s complexity, but we aim to deliver within agreed-upon deadlines.",
+    },
+    {
+        question: "Do you offer ongoing support and maintenance?",
+        answer:
+            "Absolutely, we provide continuous support and maintenance to ensure your software remains up-to-date and running smoothly.",
+    },
+    {
+        question: "Can you redesign my existing software?",
+        answer:
+            "Yes, we can revamp your existing software to improve its design, functionality, and performance.",
+    },
+    {
+        question: "What technologies do you use for software development?",
+        answer:
+            "We use a variety of modern technologies and frameworks, tailored to meet the specific needs of each project.",
+    },
+    {
+        question: "Is user experience considered in your software design process?",
+        answer:
+            "Yes, user experience is a key focus in our design process, ensuring intuitive and engaging interfaces.",
+    },
 ]
 
 export default function SoftwareDevDesign() {
@@ -81,7 +106,7 @@ export default function SoftwareDevDesign() {
                     <div className="bg-gray-50 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
                         <img
                             className="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full"
-                            src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80"
+                            src="/images/swdd-hero-img.png"
                             alt=""
                         />
                     </div>
@@ -160,8 +185,8 @@ export default function SoftwareDevDesign() {
                         </div>
                         <div className="flex items-start justify-end lg:order-first">
                             <img
-                                src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
-                                alt="Product screenshot"
+                                src="/images/pwa-img-9.png"
+                                alt=""
                                 className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
                                 width={2432}
                                 height={1442}
@@ -197,8 +222,7 @@ export default function SoftwareDevDesign() {
 
                 </span>
 
-                            <h3 className="text-xl font-semibold text-gray-700 capitalize">Requirement
-                                Gathering</h3>
+                            <h3 className="text-xl font-semibold text-gray-700 capitalize">Requirement Gathering</h3>
 
                             <p className="text-gray-500 dark:text-gray-300">
                                 We start by thoroughly understanding your business needs and technical requirements to
@@ -272,11 +296,12 @@ export default function SoftwareDevDesign() {
                         <div className="space-y-3">
                 <span
                     className="inline-block p-3 text-em-purple bg-em-yellow rounded-full dark:text-white dark:bg-blue-500">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24"
-                         stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                              d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"/>
-                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
+                         stroke="currentColor" className="w-6 h-6">
+  <path strokeLinecap="round" strokeLinejoin="round"
+        d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23-.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"/>
+</svg>
+
                 </span>
 
                             <h3 className="text-xl font-semibold text-gray-700 capitalize">
@@ -284,7 +309,8 @@ export default function SoftwareDevDesign() {
                             </h3>
 
                             <p className="text-gray-500">
-                                Rigorous testing is conducted to identify and fix any issues, ensuring the software meets our high-quality standards and performs optimally.
+                                Rigorous testing is conducted to identify and fix any issues, ensuring the software
+                                meets our high-quality standards and performs optimally.
                             </p>
 
 
@@ -307,24 +333,13 @@ export default function SoftwareDevDesign() {
                             <p className="text-gray-500">
                                 We deploy the software and provide ongoing support to ensure it operates smoothly and effectively, with regular updates and maintenance.
                             </p>
-
-                            <a href="#"
-                               className="inline-flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform dark:text-blue-400 hover:underline hover:text-blue-600 dark:hover:text-blue-500">
-                                <span className="mx-1">read more</span>
-                                <svg className="w-4 h-4 mx-1 rtl:-scale-x-100" fill="currentColor" viewBox="0 0 20 20"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path fillRule="evenodd"
-                                          d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                                          clipRule="evenodd"></path>
-                                </svg>
-                            </a>
                         </div>
                     </div>
                 </div>
             </div>
             <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
                 <img
-                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2850&q=80&blend=111827&blend-mode=multiply&sat=-100&exp=15"
+                    src="/images/swdd-img-1.png"
                     alt=""
                     className="absolute inset-0 -z-10 h-full w-full object-cover"
                 />
@@ -342,24 +357,14 @@ export default function SoftwareDevDesign() {
                         />
                     </div>
                     <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
-                        <h2 className="text-base font-semibold leading-8 text-indigo-400">Our track record</h2>
+                        <h2 className="text-base font-semibold leading-8 text-em-yellow">The Empuls3 Advantage</h2>
                         <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                            Trusted by thousands of creators&nbsp;worldwide
+                            Why Choose Our Software Development and Design Solutions
                         </p>
-                        <p className="mt-6 text-lg leading-8 text-gray-300">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis
-                            suscipit eaque, iste
-                            dolor cupiditate blanditiis ratione.
+                        <p className="mt-6 text-lg leading-8 text-white">
+                            Choosing Empuls3 for your software development and design needs means partnering with a team that prioritizes your business success. Our extensive experience and expertise enable us to deliver innovative and high-quality software solutions tailored to your unique requirements. We focus on creating software that is not only functional and reliable but also offers an exceptional user experience. Our commitment to client satisfaction and continuous improvement sets us apart as a trusted provider of software development and design solutions.
                         </p>
                     </div>
-                    <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-10 text-white sm:mt-20 sm:grid-cols-2 sm:gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-4">
-                        {stats.map((stat) => (
-                            <div key={stat.id} className="flex flex-col gap-y-3 border-l border-white/10 pl-6">
-                                <dt className="text-sm leading-6">{stat.name}</dt>
-                                <dd className="order-first text-3xl font-semibold tracking-tight">{stat.value}</dd>
-                            </div>
-                        ))}
-                    </dl>
                 </div>
             </div>
             <div className="bg-white">
@@ -402,32 +407,29 @@ export default function SoftwareDevDesign() {
                     <div className="items-center gap-x-12 sm:px-4 md:px-0 lg:flex">
                         <div className="flex-1 sm:hidden lg:block">
                             <img
-                                src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                                src="/images/pwa-img-11.png"
                                 className="md:max-w-lg sm:rounded-lg" alt=""/>
                         </div>
                         <div className="max-w-xl px-4 space-y-3 mt-6 sm:px-0 md:mt-0 lg:max-w-2xl">
-                            <h3 className="text-indigo-600 font-semibold">
-                                Professional services
-                            </h3>
-                            <p className="text-gray-800 text-3xl font-semibold sm:text-4xl">
-                                Build your SaaS solution with help from our experts
+                            <h2
+                                className="col-start-1 row-start-1 h-7 text-base font-semibold leading-7 text-em-pink mb-4"
+                                aria-hidden="true">Ready to Transform Your Business?
+                            </h2>
+                            <div className="mb-4 text-4xl font-extrabold tracking-tight text-slate-900">
+                                Get Started with Empuls3
+                            </div>
+                            <p className="mt-6 text-lg leading-8 text-gray-600">
+                                Partner with Empuls3 for comprehensive software development and design solutions that
+                                drive innovation and growth. Contact us to discuss your project requirements and get
+                                started today.
                             </p>
-                            <p className="mt-3 text-gray-600">
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                officia deserunt mollit anim id est laborum, sed ut perspiciatis unde omnis iste natus
-                                error sit voluptatem accusantium doloremque laudantium
-                            </p>
-                            <a href="#"
-                               className="inline-flex gap-x-1 items-center text-indigo-600 hover:text-indigo-500 duration-150 font-medium">
-                                Learn more
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                     className="w-5 h-5">
-                                    <path fillRule="evenodd"
-                                          d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
-                                          clipRule="evenodd"/>
-                                </svg>
-                            </a>
+                            <div className="mt-12 flex items-center gap-x-6">
+                                <Link href="/contact"
+                                      className="relative h-12 overflow-hidden rounded bg-em-pink px-5 py-2.5 font-semibold text-white transition-all duration-300 hover:bg-em-purple hover:ring-2 hover:ring-em-pink hover:ring-offset-2">
+                                    <span className="relative">Lets Get Started</span>
+                                </Link>
+
+                            </div>
                         </div>
                     </div>
                 </div>
