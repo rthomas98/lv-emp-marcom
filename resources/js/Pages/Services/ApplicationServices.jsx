@@ -1,38 +1,65 @@
 import Marcom from "@/Layouts/MarcomLayout.jsx";
-import {InboxIcon, MinusSmallIcon, PlusSmallIcon, TrashIcon, UsersIcon} from '@heroicons/react/24/outline'
+import {
+    CodeBracketSquareIcon, ComputerDesktopIcon,
+    MinusSmallIcon,
+    PlusSmallIcon,
+    WrenchIcon
+} from '@heroicons/react/24/outline'
 import {Disclosure, DisclosureButton, DisclosurePanel} from "@headlessui/react";
 
 const features = [
     {
-        name: 'Unlimited inboxes',
+        name: 'Custom Application Development',
         description:
-            'Non quo aperiam repellendus quas est est. Eos aut dolore aut ut sit nesciunt. Ex tempora quia. Sit nobis consequatur dolores incidunt.',
-        href: '#',
-        icon: InboxIcon,
+            'We build custom applications tailored to your business requirements, ensuring they are scalable, secure, and user-friendly.',
+        icon: CodeBracketSquareIcon,
     },
     {
-        name: 'Manage team members',
+        name: 'Application Maintenance and Support',
         description:
-            'Vero eum voluptatem aliquid nostrum voluptatem. Vitae esse natus. Earum nihil deserunt eos quasi cupiditate. A inventore et molestiae natus.',
-        href: '#',
-        icon: UsersIcon,
+            'Our maintenance and support services ensure your applications remain up-to-date, secure, and running smoothly, minimizing disruptions.',
+        icon: WrenchIcon,
     },
     {
-        name: 'Spam report',
+        name: 'Application Modernization',
         description:
-            'Et quod quaerat dolorem quaerat architecto aliquam accusantium. Ex adipisci et doloremque autem quia quam. Quis eos molestiae at iure impedit.',
-        href: '#',
-        icon: TrashIcon,
+            'We help you modernize legacy applications to improve performance, enhance user experience, and extend their lifespan.',
+        icon: ComputerDesktopIcon,
     },
 ]
 
 const faqs = [
     {
-        question: "What's the best thing about Switzerland?",
+        question: "What types of applications do you develop?",
         answer:
-            "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+            "We develop a wide range of applications, including web, mobile, and enterprise applications, tailored to meet your specific needs.",
     },
-    // More questions...
+    {
+        question: "Can you support and maintain existing applications?",
+        answer:
+            "Yes, we offer comprehensive maintenance and support services for both new and existing applications.",
+    },
+    {
+        question: "How long does it take to develop a custom application?",
+        answer:
+            "The timeline varies depending on the complexity of the project, but we work to deliver within agreed-upon deadlines.",
+    },
+    {
+        question: "Do you offer application modernization services?",
+        answer:
+            "Yes, we specialize in modernizing legacy applications to improve their performance and extend their lifespan.",
+    },
+    {
+        question: "What is your development process?",
+        answer:
+            "Our process includes requirement gathering, design, development, testing, and deployment, followed by ongoing support and maintenance.",
+    },
+    {
+        question: "How do I get started with your application services?",
+        answer:
+            "You can get started by contacting us directly or exploring our services on the website. We’ll guide you through the next steps.",
+    },
+
 ]
 
 
@@ -40,32 +67,46 @@ export default function ApplicationServices() {
     return (
         <Marcom>
             <div className="">
-                <section className="relative pt-12 overflow-hidden bg-black sm:pt-16">
+                <div className="relative pt-12 isolate overflow-hidden bg-em-purple sm:pt-16">
+                    <svg
+                        aria-hidden="true"
+                        className="absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_left,white,transparent)]"
+                    >
+                        <defs>
+                            <pattern
+                                x="50%"
+                                y={-1}
+                                id="983e3e4c-de6d-4c3f-8d64-b9761d1534cc"
+                                width={200}
+                                height={200}
+                                patternUnits="userSpaceOnUse"
+                            >
+                                <path d="M.5 200V.5H200" fill="none"/>
+                            </pattern>
+                        </defs>
+                        <svg x="50%" y={-1} className="overflow-visible fill-gray-800/20">
+                            <path
+                                d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z"
+                                strokeWidth={0}
+                            />
+                        </svg>
+                        <rect fill="url(#983e3e4c-de6d-4c3f-8d64-b9761d1534cc)" width="100%" height="100%"
+                              strokeWidth={0}/>
+                    </svg>
                     <div className="relative px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                         <div className="max-w-4xl mx-auto text-center">
-                            <p className="text-sm font-normal tracking-widest uppercase">
-                                <span
-                                    className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-purple-500"> Your startup needs a kick </span>
-                            </p>
-                            <h1 className="mt-8 text-4xl font-normal text-white sm:text-5xl lg:text-6xl xl:text-7xl">Connect
-                                & grow with
-                                your targeted customers</h1>
-
                             <div
-                                className="flex flex-col items-center justify-center px-8 mt-12 space-y-5 sm:space-y-0 sm:px-0 sm:space-x-5 sm:flex-row">
-                                <div
-                                    className="relative inline-flex items-center justify-center w-full sm:w-auto group">
-                                    <div
-                                        className="absolute transition-all duration-200 rounded-full -inset-px bg-gradient-to-r from-cyan-500 to-purple-500 group-hover:shadow-lg group-hover:shadow-cyan-500/50"></div>
-                                    <a href="#" title=""
-                                       className="relative inline-flex items-center justify-center w-full px-8 py-3 text-base font-normal text-white bg-black border border-transparent rounded-full sm:w-auto"
-                                       role="button"> Start 14 Days Free Trial </a>
-                                </div>
-
-                                <a href="#" title=""
-                                   className="inline-flex items-center justify-center w-full px-8 py-3 text-base font-normal text-white transition-all duration-200 bg-black border border-gray-600 rounded-full sm:w-auto hover:border-white"
-                                   role="button"> Talk to Sales </a>
+                                className="col-start-1 row-start-1 h-7 text-base font-semibold leading-7 text-em-yellow"
+                                aria-hidden="true">End-to-End Application Solutions
                             </div>
+                            <h1
+                                className="mt-4 text-4xl font-extrabold tracking-tight text-white sm:text-7xl">
+                                Application Services
+                            </h1>
+                            <p className="mt-6 text-lg leading-8 text-white lg:max-w-none">
+                                Empuls3 offers comprehensive application services designed to cover every stage of the application lifecycle. From initial concept to deployment and maintenance, our expert team delivers high-performance applications that drive business growth and efficiency.
+                            </p>
+
                         </div>
 
                         <div className="relative mt-12 -mb-4 sm:-mb-10 lg:-mb-12 sm:mt-16 lg:mt-24">
@@ -79,23 +120,53 @@ export default function ApplicationServices() {
                                      alt=""/>
                             </div>
 
-                            <img className="relative w-full max-w-5xl mx-auto"
-                                 src="https://landingfoliocom.imgix.net/store/collection/dusk/images/hero/4/dashboard-mockup.png"
+                            <img className="relative w-full max-w-5xl mx-auto rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                                 src="/images/application-services-hero.png"
                                  alt=""/>
                         </div>
                     </div>
-                </section>
+                </div>
             </div>
-            <div className="bg-white py-24 sm:py-32">
+            <div className="bg-white py-24 sm:py-32 relative overflow-hidden isolate">
+                <svg
+                    aria-hidden="true"
+                    className="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+                >
+                    <defs>
+                        <pattern
+                            x="50%"
+                            y={-1}
+                            id="0787a7c5-978c-4f66-83c7-11c213f99cb7"
+                            width={200}
+                            height={200}
+                            patternUnits="userSpaceOnUse"
+                        >
+                            <path d="M.5 200V.5H200" fill="none"/>
+                        </pattern>
+                    </defs>
+                    <rect fill="url(#0787a7c5-978c-4f66-83c7-11c213f99cb7)" width="100%" height="100%" strokeWidth={0}/>
+                </svg>
+                <div
+                    aria-hidden="true"
+                    className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+                >
+                    <div
+                        style={{
+                            clipPath:
+                                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+                        }}
+                        className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+                    />
+                </div>
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto max-w-2xl lg:mx-0">
-                        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                            Stay on top of customer support
-                        </h2>
-                        <p className="mt-6 text-lg leading-8 text-gray-600">
-                            Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate
-                            veritatis in
-                            accusamus quisquam.
+                        <div
+                            className="col-start-1 row-start-1 mb-4 h-7 text-base font-semibold leading-7 text-em-pink"
+                            aria-hidden="true">Comprehensive and Customized
+                        </div>
+                        <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">About Our Application Services</h2>
+                        <p className="mb-4">
+                            At Empuls3, we provide end-to-end application services that cater to the specific needs of your business. Our approach ensures that every aspect of your application is meticulously planned, developed, and maintained to achieve optimal performance and reliability. Whether you need a custom-built solution or support for an existing application, our team is here to help you succeed.
                         </p>
                     </div>
                     <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
@@ -104,19 +175,13 @@ export default function ApplicationServices() {
                                 <div key={feature.name} className="flex flex-col">
                                     <dt className="text-base font-semibold leading-7 text-gray-900">
                                         <div
-                                            className="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                                            className="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-em-purple">
                                             <feature.icon className="h-6 w-6 text-white" aria-hidden="true"/>
                                         </div>
                                         {feature.name}
                                     </dt>
                                     <dd className="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
                                         <p className="flex-auto">{feature.description}</p>
-                                        <p className="mt-6">
-                                            <a href={feature.href}
-                                               className="text-sm font-semibold leading-6 text-indigo-600">
-                                                Learn more <span aria-hidden="true">→</span>
-                                            </a>
-                                        </p>
                                     </dd>
                                 </div>
                             ))}
@@ -124,19 +189,22 @@ export default function ApplicationServices() {
                     </div>
                 </div>
             </div>
-            <section className="py-10 bg-gray-100 sm:py-16 lg:py-24">
+            <div className="py-10 bg-em-pink sm:py-16 lg:py-24 relative overflow-hidden isolate">
+
                 <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                     <div
                         className="grid items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 xl:grid-cols-6 sm:gap-x-12 gap-y-12">
                         <div className="lg:col-span-2">
-                            <h2 className="text-3xl font-bold leading-tight text-gray-800 sm:text-4xl lg:text-5xl lg:leading-tight">
-                                1 team.<br/>
-                                6+ years.<br/>
-                                300+ projects.<br/>
+                            <div
+                                className="col-start-1 row-start-1 mb-4 h-7 text-base font-semibold leading-7 text-white"
+                                aria-hidden="true">The Empuls3 Advantage
+                            </div>
+                            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-white">
+                                Why Choose Our Application Services
                             </h2>
-                            <p className="mt-6 text-base text-gray-600">Amet minim mollit non deserunt ullamco est sit
-                                aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation
-                                veniam consequat sunt nostrud amet.</p>
+                            <p className="mb-4 text-white">
+                                Choosing Empuls3 for your application services means partnering with a team that is committed to your success. We bring extensive experience and technical expertise to every project, ensuring that your applications are not only functional but also aligned with your business goals. Our comprehensive approach covers everything from development to maintenance, providing you with a reliable and scalable solution that grows with your business.
+                            </p>
                         </div>
 
                         <div className="lg:col-span-3 xl:col-span-4">
@@ -223,7 +291,7 @@ export default function ApplicationServices() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
             <section className="py-12 bg-white sm:py-16 lg:py-20">
                 <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                     <div className="sm:flex sm:items-center sm:justify-between sm:space-x-8">
@@ -383,7 +451,19 @@ export default function ApplicationServices() {
                     </div>
                 </div>
             </section>
-            <div className="bg-gray-900">
+            <div className="bg-em-purple relative isolate overflow-hidden">
+                <div
+                    aria-hidden="true"
+                    className="absolute left-[calc(50%-4rem)] top-10 -z-10 transform-gpu blur-3xl sm:left-[calc(50%-18rem)] lg:left-48 lg:top-[calc(50%-30rem)] xl:left-[calc(50%-24rem)]"
+                >
+                    <div
+                        style={{
+                            clipPath:
+                                'polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)',
+                        }}
+                        className="aspect-[1108/632] w-[69.25rem] bg-gradient-to-r from-[#80caff] to-[#4f46e5] opacity-20"
+                    />
+                </div>
                 <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
                     <div className="mx-auto max-w-4xl divide-y divide-white/10">
                         <h2 className="text-2xl font-bold leading-10 tracking-tight text-white">Frequently asked
@@ -421,7 +501,7 @@ export default function ApplicationServices() {
             <div className="bg-white">
                 <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
                     <div
-                        className="relative isolate overflow-hidden bg-gray-900 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+                        className="relative isolate overflow-hidden bg-em-pink px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
                         <svg
                             viewBox="0 0 1024 1024"
                             className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
@@ -431,20 +511,21 @@ export default function ApplicationServices() {
                                     fillOpacity="0.7"/>
                             <defs>
                                 <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
-                                    <stop stopColor="#7775D6"/>
-                                    <stop offset={1} stopColor="#E935C1"/>
+                                    <stop stopColor="#231B53"/>
+                                    <stop offset={1} stopColor="#1F1946"/>
                                 </radialGradient>
                             </defs>
                         </svg>
                         <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
-                            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                                Boost your productivity.
-                                <br/>
-                                Start using our app today.
+                            <div
+                                className="col-start-1 row-start-1 mb-4 h-7 text-base font-semibold leading-7 text-em-pink"
+                                aria-hidden="true">Ready to Elevate Your Applications?
+                            </div>
+                            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-white">
+                                Partner with Empuls3 Today
                             </h2>
-                            <p className="mt-6 text-lg leading-8 text-gray-300">
-                                Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing
-                                sagittis vel nulla.
+                            <p className="mb-4 text-white">
+                                Whether you're starting from scratch or looking to modernize an existing application, Empuls3 is here to help. Our comprehensive application services are designed to meet your business needs and drive growth. Contact us today to learn more or get started.
                             </p>
                             <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
                                 <a
@@ -461,8 +542,8 @@ export default function ApplicationServices() {
                         <div className="relative mt-16 h-80 lg:mt-8">
                             <img
                                 className="absolute left-0 top-0 w-[57rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
-                                src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
-                                alt="App screenshot"
+                                src="/images/app-ser-img-1.png"
+                                alt=""
                                 width={1824}
                                 height={1080}
                             />
